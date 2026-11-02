@@ -1,0 +1,425 @@
+{
+  "episodes": [
+    {
+      "episode_index": 0,
+      "onset_frame": 26,
+      "onset_s": 0.8666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 1,
+      "onset_frame": 25,
+      "onset_s": 0.8333333333333334,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 2,
+      "onset_frame": 30,
+      "onset_s": 1.0,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 3,
+      "onset_frame": 25,
+      "onset_s": 0.8333333333333334,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 4,
+      "onset_frame": 33,
+      "onset_s": 1.1,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 5,
+      "onset_frame": 33,
+      "onset_s": 1.1,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 6,
+      "onset_frame": 26,
+      "onset_s": 0.8666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 7,
+      "onset_frame": 24,
+      "onset_s": 0.8,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 8,
+      "onset_frame": 30,
+      "onset_s": 1.0,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 9,
+      "onset_frame": 23,
+      "onset_s": 0.7666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 10,
+      "onset_frame": 15,
+      "onset_s": 0.5,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 11,
+      "onset_frame": 11,
+      "onset_s": 0.36666666666666664,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 12,
+      "onset_frame": 23,
+      "onset_s": 0.7666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 13,
+      "onset_frame": 30,
+      "onset_s": 1.0,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 14,
+      "onset_frame": 27,
+      "onset_s": 0.9,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 15,
+      "onset_frame": 23,
+      "onset_s": 0.7666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 16,
+      "onset_frame": 21,
+      "onset_s": 0.7,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 17,
+      "onset_frame": 19,
+      "onset_s": 0.6333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 18,
+      "onset_frame": 12,
+      "onset_s": 0.4,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 19,
+      "onset_frame": 27,
+      "onset_s": 0.9,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 20,
+      "onset_frame": 21,
+      "onset_s": 0.7,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 21,
+      "onset_frame": 24,
+      "onset_s": 0.8,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 22,
+      "onset_frame": 31,
+      "onset_s": 1.0333333333333334,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 23,
+      "onset_frame": 32,
+      "onset_s": 1.0666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 24,
+      "onset_frame": 20,
+      "onset_s": 0.6666666666666666,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 25,
+      "onset_frame": 19,
+      "onset_s": 0.6333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 26,
+      "onset_frame": 28,
+      "onset_s": 0.9333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 27,
+      "onset_frame": 7,
+      "onset_s": 0.23333333333333334,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 28,
+      "onset_frame": 22,
+      "onset_s": 0.7333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 29,
+      "onset_frame": 15,
+      "onset_s": 0.5,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 30,
+      "onset_frame": 15,
+      "onset_s": 0.5,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 31,
+      "onset_frame": 18,
+      "onset_s": 0.6,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 32,
+      "onset_frame": 16,
+      "onset_s": 0.5333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 33,
+      "onset_frame": 10,
+      "onset_s": 0.3333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 34,
+      "onset_frame": 23,
+      "onset_s": 0.7666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 35,
+      "onset_frame": 9,
+      "onset_s": 0.3,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 36,
+      "onset_frame": 18,
+      "onset_s": 0.6,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 37,
+      "onset_frame": 11,
+      "onset_s": 0.36666666666666664,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 38,
+      "onset_frame": 19,
+      "onset_s": 0.6333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 39,
+      "onset_frame": 19,
+      "onset_s": 0.6333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 40,
+      "onset_frame": 3,
+      "onset_s": 0.1,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 41,
+      "onset_frame": 31,
+      "onset_s": 1.0333333333333334,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 42,
+      "onset_frame": 46,
+      "onset_s": 1.5333333333333334,
+      "status": "warning",
+      "within_hard_limit": true,
+      "within_preferred": false
+    },
+    {
+      "episode_index": 43,
+      "onset_frame": 19,
+      "onset_s": 0.6333333333333333,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 44,
+      "onset_frame": 14,
+      "onset_s": 0.4666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 45,
+      "onset_frame": 3,
+      "onset_s": 0.1,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 46,
+      "onset_frame": 12,
+      "onset_s": 0.4,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 47,
+      "onset_frame": 26,
+      "onset_s": 0.8666666666666667,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 48,
+      "onset_frame": 11,
+      "onset_s": 0.36666666666666664,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    },
+    {
+      "episode_index": 49,
+      "onset_frame": 9,
+      "onset_s": 0.3,
+      "status": "passed",
+      "within_hard_limit": true,
+      "within_preferred": true
+    }
+  ],
+  "errors": [],
+  "kind": "firefly_fullcycle_v4_start_motion",
+  "profile": {
+    "confirmation_frames": 2,
+    "fps": 30,
+    "max_start_motion_s": 2.0,
+    "motion_dimensions": "action[0:6] (jaw excluded)",
+    "motion_threshold_rad": 0.005,
+    "preferred_start_motion_s": 1.5
+  },
+  "safe_for_training": true,
+  "schema_version": 1,
+  "warnings": [
+    {
+      "code": "initial_arm_motion_after_preferred_window",
+      "episode_index": 42,
+      "onset_frame": 46,
+      "onset_s": 1.5333333333333334,
+      "preferred_s": 1.5
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "bundle_type": "firefly_pinned_smolvla_base",
+  "materialized_files": [
+    {
+      "path": "config.json",
+      "sha256": "8b10677f3e555559761ceefcc26c5e59288398b909e64ad1f84d76837bf3c12f",
+      "size": 2020
+    },
+    {
+      "path": "model.safetensors",
+      "sha256": "7cd549ac2351fb069c0ddb3c34ad2d09cfc92b56a15dccdfc2e41467aaca01eb",
+      "size": 906712520
+    },
+    {
+      "path": "policy_postprocessor.json",
+      "sha256": "2b78bb742065288df2ec63b0ee35f97a1f6950171cf2272f7e34b1fe3873b17b",
+      "size": 660
+    },
+    {
+      "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "sha256": "490ab239d96e263687c0b2e386a0afbc235a2eceb9857c36ed32f2f162a3e7c8",
+      "size": 640
+    },
+    {
+      "path": "policy_preprocessor.json",
+      "sha256": "56fa2284d433b8f80ed60bf529b72d645073784a3b4f10995c18a190037f4829",
+      "size": 1940
+    },
+    {
+      "path": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "sha256": "490ab239d96e263687c0b2e386a0afbc235a2eceb9857c36ed32f2f162a3e7c8",
+      "size": 640
+    }
+  ],
+  "patches": [
+    {
+      "from": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+      "json_pointer": "/vlm_model_name",
+      "path": "config.json",
+      "to": "/home/kk/kk_data/lerobot/assets/firefly/smolvlm2-500m-video-instruct-7b375e1b73b11138ff12fe22c8f2822d8fe03467"
+    },
+    {
+      "from": true,
+      "json_pointer": "/load_vlm_weights",
+      "path": "config.json",
+      "to": false
+    },
+    {
+      "from": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+      "json_pointer": "/config/tokenizer_name",
+      "path": "policy_preprocessor.json",
+      "selector": {
+        "registry_name": "tokenizer_processor"
+      },
+      "to": "/home/kk/kk_data/lerobot/assets/firefly/smolvlm2-500m-video-instruct-7b375e1b73b11138ff12fe22c8f2822d8fe03467"
+    }
+  ],
+  "schema_version": 1,
+  "smolvlm_bundle": {
+    "canonical_path": "/home/kk/kk_data/lerobot/assets/firefly/smolvlm2-500m-video-instruct-7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "manifest": {
+      "bundle_type": "firefly_smolvlm_assets",
+      "files": [
+        {
+          "path": "added_tokens.json",
+          "sha256": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a",
+          "size": 4739
+        },
+        {
+          "path": "chat_template.json",
+          "sha256": "b585e3598909a5687f9f9d738d35223724dedef256b9b274e1cbfb32b13c74bf",
+          "size": 430
+        },
+        {
+          "path": "config.json",
+          "sha256": "ea6bc1237e96247f6258de3e202e2e62b93d6f386dc47e7b36b5588bf3a15e17",
+          "size": 3767
+        },
+        {
+          "path": "generation_config.json",
+          "sha256": "34835060c9f0f74d1acb456cc72ca32746d3843d9eb5f578f9cbffac1d2eb840",
+          "size": 136
+        },
+        {
+          "path": "merges.txt",
+          "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+          "size": 466391
+        },
+        {
+          "path": "preprocessor_config.json",
+          "sha256": "149e315d9410368e5491455bb06e0f763426e9e56cca731c13b24404a29b6374",
+          "size": 599
+        },
+        {
+          "path": "processor_config.json",
+          "sha256": "f3ad45028447b3562b4752be0d5916d6806c1ef589091a469608dcf0faa1737c",
+          "size": 67
+        },
+        {
+          "path": "special_tokens_map.json",
+          "sha256": "2dfea2a426162316ff1567c82bc6d36d9690cd9f90455f075c77daca78b45c60",
+          "size": 868
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a",
+          "size": 3548256
+        },
+        {
+          "path": "tokenizer_config.json",
+          "sha256": "dd9ce2ab89a3dd881bd9378f1a79b943a064b9275a7e1706d5b7b47b68977913",
+          "size": 28626
+        },
+        {
+          "path": "vocab.json",
+          "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+          "size": 800662
+        }
+      ],
+      "repo_id": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+      "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+      "schema_version": 1
+    },
+    "manifest_sha256": "0800074b5636013998753e7b280837c49fd12196d335e4e0e8c1d89f599327b9"
+  },
+  "upstream": {
+    "files": [
+      {
+        "path": "config.json",
+        "sha256": "650584b56c104720f7a3c91d1ec6bec9e8de8ac11e60c92ba2fa82d93eda147d",
+        "size": 2299
+      },
+      {
+        "path": "model.safetensors",
+        "sha256": "7cd549ac2351fb069c0ddb3c34ad2d09cfc92b56a15dccdfc2e41467aaca01eb",
+        "size": 906712520
+      },
+      {
+        "path": "policy_postprocessor.json",
+        "sha256": "2b78bb742065288df2ec63b0ee35f97a1f6950171cf2272f7e34b1fe3873b17b",
+        "size": 660
+      },
+      {
+        "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+        "sha256": "490ab239d96e263687c0b2e386a0afbc235a2eceb9857c36ed32f2f162a3e7c8",
+        "size": 640
+      },
+      {
+        "path": "policy_preprocessor.json",
+        "sha256": "7683d648280a72f0d51e869fb8dd1596beed90b7f84849330cf1bc26634a4bd6",
+        "size": 1872
+      },
+      {
+        "path": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+        "sha256": "490ab239d96e263687c0b2e386a0afbc235a2eceb9857c36ed32f2f162a3e7c8",
+        "size": 640
+      }
+    ],
+    "repo_id": "lerobot/smolvla_base",
+    "revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205"
+  }
+}

@@ -1,0 +1,743 @@
+{
+  "audit": "firefly_lerobot_dataset",
+  "checks": {
+    "action_state_relationship": {
+      "all_frames_exactly_equal": false,
+      "comparable_frames": 91836,
+      "compared_values": 642852,
+      "error_action_minus_state": {
+        "overall": {
+          "count": 642852,
+          "max_abs": 0.13874101638793945,
+          "mean_abs": 0.013027212878313764,
+          "mean_signed": -0.006218892994213601,
+          "rmse": 0.02092682845307082
+        },
+        "per_joint": {
+          "jaw_joint1.pos": {
+            "count": 91836,
+            "max_abs": 0.07310545444488525,
+            "mean_abs": 0.010604609245492573,
+            "mean_signed": -0.010374242239720347,
+            "rmse": 0.01911278680604446
+          },
+          "joint_1.pos": {
+            "count": 91836,
+            "max_abs": 0.05274423956871033,
+            "mean_abs": 0.00806926767166102,
+            "mean_signed": -0.0015929560211229304,
+            "rmse": 0.010065079650947481
+          },
+          "joint_2.pos": {
+            "count": 91836,
+            "max_abs": 0.1015760600566864,
+            "mean_abs": 0.024343551940105693,
+            "mean_signed": -0.01341922670359349,
+            "rmse": 0.0313105123215843
+          },
+          "joint_3.pos": {
+            "count": 91836,
+            "max_abs": 0.13874101638793945,
+            "mean_abs": 0.035624506662124446,
+            "mean_signed": -0.018228985152752786,
+            "rmse": 0.038933999910612915
+          },
+          "joint_4.pos": {
+            "count": 91836,
+            "max_abs": 0.06696787476539612,
+            "mean_abs": 0.0068493306760454755,
+            "mean_signed": -0.003703200616114991,
+            "rmse": 0.008601899826901929
+          },
+          "joint_5.pos": {
+            "count": 91836,
+            "max_abs": 0.03708406537771225,
+            "mean_abs": 0.002708981467996673,
+            "mean_signed": 0.0012513749805841904,
+            "rmse": 0.0037774863014512364
+          },
+          "joint_6.pos": {
+            "count": 91836,
+            "max_abs": 0.04603889584541321,
+            "mean_abs": 0.002990242484770449,
+            "mean_signed": 0.0025349847932251437,
+            "rmse": 0.003801839237416659
+          }
+        }
+      },
+      "exactly_equal_frame_fraction": 0.0,
+      "exactly_equal_frames": 0,
+      "exactly_equal_value_fraction": 0.0002566687200164268,
+      "exactly_equal_values": 165,
+      "passed": true
+    },
+    "action_step": {
+      "consecutive_action_violation_frames": 0,
+      "consecutive_action_violation_values": 0,
+      "consecutive_comparisons": 91786,
+      "examples": [],
+      "first_action_vs_state_tracking_error": {
+        "comparison_values": 350,
+        "diagnostic_only": true,
+        "max_abs": 0.04060506820678711,
+        "mean_abs": 0.007235269657685422,
+        "step_reference_exceedance_episodes": 0,
+        "step_reference_exceedance_values": 0
+      },
+      "first_action_vs_state_violation_episodes": 0,
+      "first_action_vs_state_violation_values": 0,
+      "note": "only consecutive actions within an episode are hard step-limit checks; episode-first action/state differences are tracking diagnostics",
+      "passed": true,
+      "per_joint": {
+        "jaw_joint1.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0165,
+          "max_consecutive_action_delta": 0.016362309455871582,
+          "max_first_action_vs_state_tracking_error": 0.012490242719650269
+        },
+        "joint_1.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0435,
+          "max_consecutive_action_delta": 0.026737362146377563,
+          "max_first_action_vs_state_tracking_error": 0.011329211294651031
+        },
+        "joint_2.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0435,
+          "max_consecutive_action_delta": 0.015679866075515747,
+          "max_first_action_vs_state_tracking_error": 0.02397298812866211
+        },
+        "joint_3.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0435,
+          "max_consecutive_action_delta": 0.022443771362304688,
+          "max_first_action_vs_state_tracking_error": 0.04060506820678711
+        },
+        "joint_4.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0435,
+          "max_consecutive_action_delta": 0.027314305305480957,
+          "max_first_action_vs_state_tracking_error": 0.034226953983306885
+        },
+        "joint_5.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0435,
+          "max_consecutive_action_delta": 0.022875638213008642,
+          "max_first_action_vs_state_tracking_error": 0.003336295485496521
+        },
+        "joint_6.pos": {
+          "consecutive_action_violations": 0,
+          "first_action_vs_state_diagnostic_exceedances": 0,
+          "first_action_vs_state_violations": 0,
+          "limit_rad_per_30hz_step": 0.0435,
+          "max_consecutive_action_delta": 0.03568415716290474,
+          "max_first_action_vs_state_tracking_error": 0.003959473222494125
+        }
+      },
+      "skipped": false
+    },
+    "controller_contract": {
+      "effective_step_limits": [
+        0.0435,
+        0.0435,
+        0.0435,
+        0.0435,
+        0.0435,
+        0.0435,
+        0.0165
+      ],
+      "input_format": "flat_envelope",
+      "joint_names": [
+        "joint_1.pos",
+        "joint_2.pos",
+        "joint_3.pos",
+        "joint_4.pos",
+        "joint_5.pos",
+        "joint_6.pos",
+        "jaw_joint1.pos"
+      ],
+      "margin_position_max": [
+        2.839999895095825,
+        2.0699999141693115,
+        3.120000104904175,
+        1.5500000524520874,
+        1.5199999618530273,
+        2.7699999618530273,
+        0.5950000238418579
+      ],
+      "margin_position_min": [
+        -2.839999895095825,
+        -1.5500000524520874,
+        0.02,
+        -1.5500000524520874,
+        -1.5199999618530273,
+        -2.7699999618530273,
+        0.005
+      ],
+      "passed": true,
+      "position_margins": [
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.005
+      ],
+      "provided": true,
+      "raw_position_max": [
+        2.859999895095825,
+        2.0899999141693115,
+        3.140000104904175,
+        1.5700000524520874,
+        1.5399999618530273,
+        2.7899999618530273,
+        0.6000000238418579
+      ],
+      "raw_position_min": [
+        -2.859999895095825,
+        -1.5700000524520874,
+        0.0,
+        -1.5700000524520874,
+        -1.5399999618530273,
+        -2.7899999618530273,
+        0.0
+      ],
+      "source": "live ArmDescription/EeDescription via HexZenohCommandTap"
+    },
+    "episode_30hz_sequence": {
+      "duplicate_global_indexes": 0,
+      "episode_length_mismatches": 0,
+      "episodes": 50,
+      "frame_index_violation_rows": 0,
+      "max_timestamp_error_s": 3.5603841155307236e-06,
+      "passed": true,
+      "timestamp_30hz_violation_rows": 0,
+      "timestamp_tolerance_s": 0.0001
+    },
+    "features": {
+      "action": {
+        "actual_dtype": "float32",
+        "actual_names": [
+          "joint_1.pos",
+          "joint_2.pos",
+          "joint_3.pos",
+          "joint_4.pos",
+          "joint_5.pos",
+          "joint_6.pos",
+          "jaw_joint1.pos"
+        ],
+        "actual_shape": [
+          7
+        ],
+        "expected_dtype": "float32",
+        "expected_names": [
+          "joint_1.pos",
+          "joint_2.pos",
+          "joint_3.pos",
+          "joint_4.pos",
+          "joint_5.pos",
+          "joint_6.pos",
+          "jaw_joint1.pos"
+        ],
+        "expected_shape": [
+          7
+        ],
+        "passed": true
+      },
+      "fps": {
+        "actual": 30,
+        "expected": 30.0,
+        "passed": true
+      },
+      "images": {
+        "observation.images.scene": {
+          "actual_shape": [
+            480,
+            640,
+            3
+          ],
+          "dtype": "video",
+          "expected_shape": [
+            480,
+            640,
+            3
+          ],
+          "passed": true,
+          "video_fps": 30
+        },
+        "observation.images.wrist": {
+          "actual_shape": [
+            480,
+            640,
+            3
+          ],
+          "dtype": "video",
+          "expected_shape": [
+            480,
+            640,
+            3
+          ],
+          "passed": true,
+          "video_fps": 30
+        }
+      },
+      "observation.state": {
+        "actual_dtype": "float32",
+        "actual_names": [
+          "joint_1.pos",
+          "joint_2.pos",
+          "joint_3.pos",
+          "joint_4.pos",
+          "joint_5.pos",
+          "joint_6.pos",
+          "jaw_joint1.pos"
+        ],
+        "actual_shape": [
+          7
+        ],
+        "expected_dtype": "float32",
+        "expected_names": [
+          "joint_1.pos",
+          "joint_2.pos",
+          "joint_3.pos",
+          "joint_4.pos",
+          "joint_5.pos",
+          "joint_6.pos",
+          "jaw_joint1.pos"
+        ],
+        "expected_shape": [
+          7
+        ],
+        "passed": true
+      },
+      "robot_type": {
+        "actual": "hex_zenoh_observer",
+        "expected": "hex_zenoh_observer",
+        "passed": true
+      },
+      "scalars": {
+        "episode_index": {
+          "actual_dtype": "int64",
+          "actual_shape": [
+            1
+          ],
+          "expected_dtype": "int64",
+          "expected_shape": [
+            1
+          ],
+          "passed": true
+        },
+        "frame_index": {
+          "actual_dtype": "int64",
+          "actual_shape": [
+            1
+          ],
+          "expected_dtype": "int64",
+          "expected_shape": [
+            1
+          ],
+          "passed": true
+        },
+        "index": {
+          "actual_dtype": "int64",
+          "actual_shape": [
+            1
+          ],
+          "expected_dtype": "int64",
+          "expected_shape": [
+            1
+          ],
+          "passed": true
+        },
+        "task_index": {
+          "actual_dtype": "int64",
+          "actual_shape": [
+            1
+          ],
+          "expected_dtype": "int64",
+          "expected_shape": [
+            1
+          ],
+          "passed": true
+        },
+        "timestamp": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1
+          ],
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1
+          ],
+          "passed": true
+        }
+      }
+    },
+    "media_presence": {
+      "features": {
+        "observation.images.scene": {
+          "file_count": 50,
+          "files": [
+            "videos/observation.images.scene/chunk-000/file-000.mp4",
+            "videos/observation.images.scene/chunk-000/file-001.mp4",
+            "videos/observation.images.scene/chunk-000/file-002.mp4",
+            "videos/observation.images.scene/chunk-000/file-003.mp4",
+            "videos/observation.images.scene/chunk-000/file-004.mp4",
+            "videos/observation.images.scene/chunk-000/file-005.mp4",
+            "videos/observation.images.scene/chunk-000/file-006.mp4",
+            "videos/observation.images.scene/chunk-000/file-007.mp4",
+            "videos/observation.images.scene/chunk-000/file-008.mp4",
+            "videos/observation.images.scene/chunk-000/file-009.mp4",
+            "videos/observation.images.scene/chunk-000/file-010.mp4",
+            "videos/observation.images.scene/chunk-000/file-011.mp4",
+            "videos/observation.images.scene/chunk-000/file-012.mp4",
+            "videos/observation.images.scene/chunk-000/file-013.mp4",
+            "videos/observation.images.scene/chunk-000/file-014.mp4",
+            "videos/observation.images.scene/chunk-000/file-015.mp4",
+            "videos/observation.images.scene/chunk-000/file-016.mp4",
+            "videos/observation.images.scene/chunk-000/file-017.mp4",
+            "videos/observation.images.scene/chunk-000/file-018.mp4",
+            "videos/observation.images.scene/chunk-000/file-019.mp4",
+            "videos/observation.images.scene/chunk-000/file-020.mp4",
+            "videos/observation.images.scene/chunk-000/file-021.mp4",
+            "videos/observation.images.scene/chunk-000/file-022.mp4",
+            "videos/observation.images.scene/chunk-000/file-023.mp4",
+            "videos/observation.images.scene/chunk-000/file-024.mp4",
+            "videos/observation.images.scene/chunk-000/file-025.mp4",
+            "videos/observation.images.scene/chunk-000/file-026.mp4",
+            "videos/observation.images.scene/chunk-000/file-027.mp4",
+            "videos/observation.images.scene/chunk-000/file-028.mp4",
+            "videos/observation.images.scene/chunk-000/file-029.mp4",
+            "videos/observation.images.scene/chunk-000/file-030.mp4",
+            "videos/observation.images.scene/chunk-000/file-031.mp4",
+            "videos/observation.images.scene/chunk-000/file-032.mp4",
+            "videos/observation.images.scene/chunk-000/file-033.mp4",
+            "videos/observation.images.scene/chunk-000/file-034.mp4",
+            "videos/observation.images.scene/chunk-000/file-035.mp4",
+            "videos/observation.images.scene/chunk-000/file-036.mp4",
+            "videos/observation.images.scene/chunk-000/file-037.mp4",
+            "videos/observation.images.scene/chunk-000/file-038.mp4",
+            "videos/observation.images.scene/chunk-000/file-039.mp4",
+            "videos/observation.images.scene/chunk-000/file-040.mp4",
+            "videos/observation.images.scene/chunk-000/file-041.mp4",
+            "videos/observation.images.scene/chunk-000/file-042.mp4",
+            "videos/observation.images.scene/chunk-000/file-043.mp4",
+            "videos/observation.images.scene/chunk-000/file-044.mp4",
+            "videos/observation.images.scene/chunk-000/file-045.mp4",
+            "videos/observation.images.scene/chunk-000/file-046.mp4",
+            "videos/observation.images.scene/chunk-000/file-047.mp4",
+            "videos/observation.images.scene/chunk-000/file-048.mp4",
+            "videos/observation.images.scene/chunk-000/file-049.mp4"
+          ],
+          "passed": true
+        },
+        "observation.images.wrist": {
+          "file_count": 50,
+          "files": [
+            "videos/observation.images.wrist/chunk-000/file-000.mp4",
+            "videos/observation.images.wrist/chunk-000/file-001.mp4",
+            "videos/observation.images.wrist/chunk-000/file-002.mp4",
+            "videos/observation.images.wrist/chunk-000/file-003.mp4",
+            "videos/observation.images.wrist/chunk-000/file-004.mp4",
+            "videos/observation.images.wrist/chunk-000/file-005.mp4",
+            "videos/observation.images.wrist/chunk-000/file-006.mp4",
+            "videos/observation.images.wrist/chunk-000/file-007.mp4",
+            "videos/observation.images.wrist/chunk-000/file-008.mp4",
+            "videos/observation.images.wrist/chunk-000/file-009.mp4",
+            "videos/observation.images.wrist/chunk-000/file-010.mp4",
+            "videos/observation.images.wrist/chunk-000/file-011.mp4",
+            "videos/observation.images.wrist/chunk-000/file-012.mp4",
+            "videos/observation.images.wrist/chunk-000/file-013.mp4",
+            "videos/observation.images.wrist/chunk-000/file-014.mp4",
+            "videos/observation.images.wrist/chunk-000/file-015.mp4",
+            "videos/observation.images.wrist/chunk-000/file-016.mp4",
+            "videos/observation.images.wrist/chunk-000/file-017.mp4",
+            "videos/observation.images.wrist/chunk-000/file-018.mp4",
+            "videos/observation.images.wrist/chunk-000/file-019.mp4",
+            "videos/observation.images.wrist/chunk-000/file-020.mp4",
+            "videos/observation.images.wrist/chunk-000/file-021.mp4",
+            "videos/observation.images.wrist/chunk-000/file-022.mp4",
+            "videos/observation.images.wrist/chunk-000/file-023.mp4",
+            "videos/observation.images.wrist/chunk-000/file-024.mp4",
+            "videos/observation.images.wrist/chunk-000/file-025.mp4",
+            "videos/observation.images.wrist/chunk-000/file-026.mp4",
+            "videos/observation.images.wrist/chunk-000/file-027.mp4",
+            "videos/observation.images.wrist/chunk-000/file-028.mp4",
+            "videos/observation.images.wrist/chunk-000/file-029.mp4",
+            "videos/observation.images.wrist/chunk-000/file-030.mp4",
+            "videos/observation.images.wrist/chunk-000/file-031.mp4",
+            "videos/observation.images.wrist/chunk-000/file-032.mp4",
+            "videos/observation.images.wrist/chunk-000/file-033.mp4",
+            "videos/observation.images.wrist/chunk-000/file-034.mp4",
+            "videos/observation.images.wrist/chunk-000/file-035.mp4",
+            "videos/observation.images.wrist/chunk-000/file-036.mp4",
+            "videos/observation.images.wrist/chunk-000/file-037.mp4",
+            "videos/observation.images.wrist/chunk-000/file-038.mp4",
+            "videos/observation.images.wrist/chunk-000/file-039.mp4",
+            "videos/observation.images.wrist/chunk-000/file-040.mp4",
+            "videos/observation.images.wrist/chunk-000/file-041.mp4",
+            "videos/observation.images.wrist/chunk-000/file-042.mp4",
+            "videos/observation.images.wrist/chunk-000/file-043.mp4",
+            "videos/observation.images.wrist/chunk-000/file-044.mp4",
+            "videos/observation.images.wrist/chunk-000/file-045.mp4",
+            "videos/observation.images.wrist/chunk-000/file-046.mp4",
+            "videos/observation.images.wrist/chunk-000/file-047.mp4",
+            "videos/observation.images.wrist/chunk-000/file-048.mp4",
+            "videos/observation.images.wrist/chunk-000/file-049.mp4"
+          ],
+          "passed": true
+        }
+      },
+      "note": "MP4 presence only; video is not decoded",
+      "passed": true
+    },
+    "metadata_consistency": {
+      "passed": true,
+      "total_episodes": {
+        "actual": 50,
+        "metadata": 50
+      },
+      "total_frames": {
+        "actual": 91836,
+        "metadata": 91836
+      },
+      "total_tasks": {
+        "actual": 1,
+        "metadata": 1
+      }
+    },
+    "position_bounds": {
+      "action_margin_violation_frames": 0,
+      "action_margin_violation_values": 0,
+      "action_raw_violation_frames": 0,
+      "action_raw_violation_values": 0,
+      "examples": [],
+      "note": "state margin counts are diagnostic; measured state is required only inside raw bounds",
+      "passed": true,
+      "per_feature_per_joint": {
+        "action": {
+          "jaw_joint1.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.4778772294521332,
+            "min": 0.2684082090854645,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_1.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 1.1254831552505493,
+            "min": -0.18690598011016846,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_2.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.5575722455978394,
+            "min": -1.549631118774414,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_3.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 3.054130792617798,
+            "min": 1.2796504497528076,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_4.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 1.3367302417755127,
+            "min": -1.909985985548701e-05,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_5.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.2594442367553711,
+            "min": -0.35230737924575806,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_6.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.3594215214252472,
+            "min": -0.5774670243263245,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          }
+        },
+        "observation.state": {
+          "jaw_joint1.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.47859007120132446,
+            "min": 0.2987145483493805,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_1.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 1.1264419555664062,
+            "min": -0.18064458668231964,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_2.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.5313485264778137,
+            "min": -1.5233571529388428,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_3.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 3.033796548843384,
+            "min": 1.322533369064331,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_4.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 1.3375065326690674,
+            "min": 0.009098648093640804,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_5.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.25261810421943665,
+            "min": -0.3496038317680359,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          },
+          "joint_6.pos": {
+            "margin_above_values": 0,
+            "margin_below_values": 0,
+            "max": 0.35173213481903076,
+            "min": -0.5783873796463013,
+            "raw_above_values": 0,
+            "raw_below_values": 0
+          }
+        }
+      },
+      "skipped": false,
+      "state_margin_violation_values_diagnostic": 0,
+      "state_raw_violation_frames": 0,
+      "state_raw_violation_values": 0
+    },
+    "task_text": {
+      "episode_task_mismatches": 0,
+      "expected_task": "Find the red block, pick it up, place it in the blue box, release it, and return the arm to its initial pose.",
+      "passed": true,
+      "task_texts": [
+        {
+          "task": "Find the red block, pick it up, place it in the blue box, release it, and return the arm to its initial pose.",
+          "task_index": 0
+        }
+      ],
+      "unmapped_task_indexes": [],
+      "used_task_indexes": [
+        0
+      ]
+    }
+  },
+  "dataset": {
+    "codebase_version": "v3.0",
+    "data": {
+      "column_schema_mismatches": 0,
+      "files": [
+        "data/chunk-000/file-000.parquet",
+        "data/chunk-000/file-001.parquet",
+        "data/chunk-000/file-002.parquet",
+        "data/chunk-000/file-003.parquet",
+        "data/chunk-000/file-004.parquet",
+        "data/chunk-000/file-005.parquet",
+        "data/chunk-000/file-006.parquet",
+        "data/chunk-000/file-007.parquet",
+        "data/chunk-000/file-008.parquet",
+        "data/chunk-000/file-009.parquet",
+        "data/chunk-000/file-010.parquet",
+        "data/chunk-000/file-011.parquet",
+        "data/chunk-000/file-012.parquet",
+        "data/chunk-000/file-013.parquet",
+        "data/chunk-000/file-014.parquet",
+        "data/chunk-000/file-015.parquet",
+        "data/chunk-000/file-016.parquet",
+        "data/chunk-000/file-017.parquet",
+        "data/chunk-000/file-018.parquet",
+        "data/chunk-000/file-019.parquet",
+        "data/chunk-000/file-020.parquet",
+        "data/chunk-000/file-021.parquet",
+        "data/chunk-000/file-022.parquet",
+        "data/chunk-000/file-023.parquet",
+        "data/chunk-000/file-024.parquet",
+        "data/chunk-000/file-025.parquet",
+        "data/chunk-000/file-026.parquet",
+        "data/chunk-000/file-027.parquet",
+        "data/chunk-000/file-028.parquet",
+        "data/chunk-000/file-029.parquet",
+        "data/chunk-000/file-030.parquet",
+        "data/chunk-000/file-031.parquet",
+        "data/chunk-000/file-032.parquet",
+        "data/chunk-000/file-033.parquet",
+        "data/chunk-000/file-034.parquet",
+        "data/chunk-000/file-035.parquet",
+        "data/chunk-000/file-036.parquet",
+        "data/chunk-000/file-037.parquet",
+        "data/chunk-000/file-038.parquet",
+        "data/chunk-000/file-039.parquet",
+        "data/chunk-000/file-040.parquet",
+        "data/chunk-000/file-041.parquet",
+        "data/chunk-000/file-042.parquet",
+        "data/chunk-000/file-043.parquet",
+        "data/chunk-000/file-044.parquet",
+        "data/chunk-000/file-045.parquet",
+        "data/chunk-000/file-046.parquet",
+        "data/chunk-000/file-047.parquet",
+        "data/chunk-000/file-048.parquet",
+        "data/chunk-000/file-049.parquet"
+      ],
+      "invalid_rows": 0,
+      "nonfinite_values": 0,
+      "rows": 91836,
+      "valid_shape_rows": 91836
+    },
+    "repo_id": "local/firefly_y6_fullcycle_v4",
+    "root": "/home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4"
+  },
+  "read_only": true,
+  "schema_version": 1,
+  "summary": {
+    "error_count": 0,
+    "errors": [],
+    "safe_for_training": true,
+    "verdict": "pass",
+    "warning_count": 0,
+    "warnings": []
+  }
+}

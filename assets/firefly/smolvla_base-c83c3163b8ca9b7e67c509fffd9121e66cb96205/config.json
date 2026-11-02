@@ -1,0 +1,96 @@
+{
+  "adapt_to_pi_aloha": false,
+  "add_image_special_tokens": false,
+  "attention_mode": "cross_attn",
+  "chunk_size": 50,
+  "device": "cuda",
+  "empty_cameras": 0,
+  "expert_width_multiplier": 0.75,
+  "freeze_vision_encoder": true,
+  "input_features": {
+    "observation.images.camera1": {
+      "shape": [
+        3,
+        256,
+        256
+      ],
+      "type": "VISUAL"
+    },
+    "observation.images.camera2": {
+      "shape": [
+        3,
+        256,
+        256
+      ],
+      "type": "VISUAL"
+    },
+    "observation.images.camera3": {
+      "shape": [
+        3,
+        256,
+        256
+      ],
+      "type": "VISUAL"
+    },
+    "observation.state": {
+      "shape": [
+        6
+      ],
+      "type": "STATE"
+    }
+  },
+  "license": null,
+  "load_vlm_weights": false,
+  "max_action_dim": 32,
+  "max_period": 4.0,
+  "max_state_dim": 32,
+  "min_period": 0.004,
+  "n_action_steps": 50,
+  "n_obs_steps": 1,
+  "normalization_mapping": {
+    "ACTION": "MEAN_STD",
+    "STATE": "MEAN_STD",
+    "VISUAL": "IDENTITY"
+  },
+  "num_expert_layers": 0,
+  "num_steps": 10,
+  "num_vlm_layers": 16,
+  "optimizer_betas": [
+    0.9,
+    0.95
+  ],
+  "optimizer_eps": 1e-08,
+  "optimizer_grad_clip_norm": 10,
+  "optimizer_lr": 0.0001,
+  "optimizer_weight_decay": 1e-10,
+  "output_features": {
+    "action": {
+      "shape": [
+        6
+      ],
+      "type": "ACTION"
+    }
+  },
+  "pad_language_to": "max_length",
+  "prefix_length": 0,
+  "private": null,
+  "push_to_hub": true,
+  "repo_id": null,
+  "resize_imgs_with_padding": [
+    512,
+    512
+  ],
+  "scheduler_decay_lr": 2.5e-06,
+  "scheduler_decay_steps": 30000,
+  "scheduler_warmup_steps": 1000,
+  "self_attn_every_n_layers": 2,
+  "tags": null,
+  "tokenizer_max_length": 48,
+  "train_expert_only": true,
+  "train_state_proj": true,
+  "type": "smolvla",
+  "use_amp": false,
+  "use_cache": true,
+  "use_delta_joint_actions_aloha": false,
+  "vlm_model_name": "/home/kk/kk_data/lerobot/assets/firefly/smolvlm2-500m-video-instruct-7b375e1b73b11138ff12fe22c8f2822d8fe03467"
+}

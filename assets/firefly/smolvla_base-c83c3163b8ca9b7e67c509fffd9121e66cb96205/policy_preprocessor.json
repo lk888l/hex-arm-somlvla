@@ -1,0 +1,87 @@
+{
+  "name": "policy_preprocessor",
+  "steps": [
+    {
+      "config": {
+        "rename_map": {}
+      },
+      "registry_name": "rename_observations_processor"
+    },
+    {
+      "config": {},
+      "registry_name": "to_batch_processor"
+    },
+    {
+      "config": {},
+      "registry_name": "smolvla_new_line_processor"
+    },
+    {
+      "config": {
+        "max_length": 48,
+        "padding": "max_length",
+        "padding_side": "right",
+        "task_key": "task",
+        "tokenizer_name": "/home/kk/kk_data/lerobot/assets/firefly/smolvlm2-500m-video-instruct-7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+        "truncation": true
+      },
+      "registry_name": "tokenizer_processor"
+    },
+    {
+      "config": {
+        "device": "cuda",
+        "float_dtype": null
+      },
+      "registry_name": "device_processor"
+    },
+    {
+      "config": {
+        "eps": 1e-08,
+        "features": {
+          "action": {
+            "shape": [
+              6
+            ],
+            "type": "ACTION"
+          },
+          "observation.image": {
+            "shape": [
+              3,
+              256,
+              256
+            ],
+            "type": "VISUAL"
+          },
+          "observation.image2": {
+            "shape": [
+              3,
+              256,
+              256
+            ],
+            "type": "VISUAL"
+          },
+          "observation.image3": {
+            "shape": [
+              3,
+              256,
+              256
+            ],
+            "type": "VISUAL"
+          },
+          "observation.state": {
+            "shape": [
+              6
+            ],
+            "type": "STATE"
+          }
+        },
+        "norm_map": {
+          "ACTION": "MEAN_STD",
+          "STATE": "MEAN_STD",
+          "VISUAL": "IDENTITY"
+        }
+      },
+      "registry_name": "normalizer_processor",
+      "state_file": "policy_preprocessor_step_5_normalizer_processor.safetensors"
+    }
+  ]
+}

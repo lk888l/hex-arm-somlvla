@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-09-09T21:12:38.527316+08:00",
+  "scope": "Only pip downloads and Python/pytest generated caches. No source files, recorded datasets, model checkpoints, calibration or deployment evidence.",
+  "entries": [
+    {
+      "path": "/home/kk/kk_data/lerobot/pip_cache/http-v2",
+      "files": 614,
+      "apparent_bytes": 1611786731,
+      "allocated_bytes": 1613250560
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/pip_cache/wheels",
+      "files": 4,
+      "apparent_bytes": 89820,
+      "allocated_bytes": 102400
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/lerobot-robot-hexbase/.pytest_cache",
+      "files": 5,
+      "apparent_bytes": 133919,
+      "allocated_bytes": 151552
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/tools/__pycache__",
+      "files": 3,
+      "apparent_bytes": 11880,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/lerobot-robot-hexbase/scripts/__pycache__",
+      "files": 20,
+      "apparent_bytes": 751378,
+      "allocated_bytes": 782336
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/lerobot-robot-hexbase/tests/__pycache__",
+      "files": 52,
+      "apparent_bytes": 3723435,
+      "allocated_bytes": 3821568
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/lerobot-robot-hexbase/lerobot_robot_hexbase/__pycache__",
+      "files": 21,
+      "apparent_bytes": 871699,
+      "allocated_bytes": 921600
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/lerobot-robot-hexbase/lerobot_robot_hexbase/proto/__pycache__",
+      "files": 7,
+      "apparent_bytes": 18549,
+      "allocated_bytes": 32768
+    }
+  ],
+  "total_allocated_bytes": 1619083264,
+  "completed": true,
+  "all_targets_removed": true
+}

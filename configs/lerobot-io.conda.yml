@@ -1,0 +1,8 @@
+name: lerobot-io
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ffmpeg=7.1.1
+  - pip
+prefix: /home/kk/kk_data/lerobot/miniforge3/envs/lerobot-io

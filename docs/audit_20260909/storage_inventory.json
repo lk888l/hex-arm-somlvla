@@ -1,0 +1,257 @@
+{
+  "scope": "Local workspace and the previously documented default dataset directory only; no NAS mounted archive was searched. Sizes are regular-file byte counts without following symlinks.",
+  "items": [
+    {
+      "path": "/home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4",
+      "files": 197,
+      "apparent_bytes": 1563714926,
+      "allocated_bytes": 1564024832
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4_arm_only_v1",
+      "files": 198,
+      "apparent_bytes": 1563156383,
+      "allocated_bytes": 1563492352
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1",
+      "files": 13,
+      "apparent_bytes": 1610572631,
+      "allocated_bytes": 1610608640
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_arm_only_v1_finetune_20k_attested_run2",
+      "files": 27,
+      "apparent_bytes": 3221660079,
+      "allocated_bytes": 3221729280
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/imports/nas_outputs_20260812",
+      "files": 14,
+      "apparent_bytes": 906952222,
+      "allocated_bytes": 906985472
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/lerobot-robot-hexbase/outputs",
+      "files": 253,
+      "apparent_bytes": 565273819,
+      "allocated_bytes": 565841920
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/pip_cache",
+      "files": 618,
+      "apparent_bytes": 1611876551,
+      "allocated_bytes": 1613352960
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/assets",
+      "files": 19,
+      "apparent_bytes": 911580302,
+      "allocated_bytes": 911634432
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/hf_cache",
+      "files": 52,
+      "apparent_bytes": 2959650889,
+      "allocated_bytes": 2959773696
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/miniforge3/envs/lerobot-io",
+      "files": 55460,
+      "apparent_bytes": 9492102219,
+      "allocated_bytes": 9628635136
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/miniforge3/envs/lerobot-train",
+      "files": 55672,
+      "apparent_bytes": 9025447077,
+      "allocated_bytes": 9162510336
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/training_state",
+      "files": 5,
+      "apparent_bytes": 412683989,
+      "allocated_bytes": 412700672
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_arm_only_v1_finetune_20k_attested_run2/checkpoints/020000/training_state",
+      "files": 5,
+      "apparent_bytes": 412683984,
+      "allocated_bytes": 412700672
+    },
+    {
+      "path": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_arm_only_v1_finetune_20k_attested_run2/checkpoints/010000/training_state",
+      "files": 5,
+      "apparent_bytes": 412683988,
+      "allocated_bytes": 412700672
+    }
+  ],
+  "historical_local_configs": [
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v2.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_j3j4_kp72_kd2p75_eekp150_phase_latch_v6_recovery_preopen.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_kp60_kd2p5_eekp150.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_kp60_kd2p5_eekp150_phase_latch_v1.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_kp60_kd2p5_eekp150_phase_latch_v2.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_kp60_kd2p5_eekp150_phase_latch_v3.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_kp60_kd2p5_eekp150_phase_latch_v4_approx_start.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_fast90_per_joint_gravity_ff_gr80_payload_kp60_kd2p5_eekp150_phase_latch_v5_recovery_preopen.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_slew002.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_slew002_gravity_ff.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_slew002_gravity_ff_gr80_payload.local.yaml",
+    "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_validated_v3_trimmed_slew002_gravity_ff_gr80_payload_kp60_kd2p5.local.yaml",
+    "lerobot-robot-hexbase/configs/record_firefly_y6.local.yaml",
+    "lerobot-robot-hexbase/configs/record_firefly_y6_validated_v2.local.yaml"
+  ],
+  "original_backups_not_identical_to_current": [
+    {
+      "path": "lerobot-robot-hexbase/configs/deploy_firefly_y6_hold_fullcycle_v4_100k.local.yaml.orig",
+      "files": 1,
+      "apparent_bytes": 4417,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "lerobot-robot-hexbase/lerobot_robot_hexbase/firefly_deployment.py.orig",
+      "files": 1,
+      "apparent_bytes": 154469,
+      "allocated_bytes": 155648
+    },
+    {
+      "path": "lerobot-robot-hexbase/lerobot_robot_hexbase/firefly_visual_latch.py.orig",
+      "files": 1,
+      "apparent_bytes": 53073,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "lerobot-robot-hexbase/scripts/audit_firefly_y6_visual_latch.py.orig",
+      "files": 1,
+      "apparent_bytes": 125858,
+      "allocated_bytes": 126976
+    },
+    {
+      "path": "lerobot-robot-hexbase/scripts/run_firefly_y6.py.orig",
+      "files": 1,
+      "apparent_bytes": 115780,
+      "allocated_bytes": 118784
+    },
+    {
+      "path": "lerobot-robot-hexbase/tests/test_hex_zenoh_follower.py.orig",
+      "files": 1,
+      "apparent_bytes": 118150,
+      "allocated_bytes": 118784
+    },
+    {
+      "path": "lerobot-robot-hexbase/tests/test_run_firefly_y6.py.orig",
+      "files": 1,
+      "apparent_bytes": 153099,
+      "allocated_bytes": 155648
+    }
+  ],
+  "historical_deployment_output_dirs": [
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment",
+      "files": 7,
+      "apparent_bytes": 6553890,
+      "allocated_bytes": 6569984
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_j3j4_kp72_kd2p75_eekp150_close060_phase_latch_v6_recovery_preopen_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 3,
+      "apparent_bytes": 19479112,
+      "allocated_bytes": 19484672
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 3,
+      "apparent_bytes": 37517235,
+      "allocated_bytes": 37523456
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v1_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 3,
+      "apparent_bytes": 38046192,
+      "allocated_bytes": 38051840
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v2_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 3,
+      "apparent_bytes": 32221377,
+      "allocated_bytes": 32231424
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v3_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 15,
+      "apparent_bytes": 3509439,
+      "allocated_bytes": 3538944
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v5_recovery_preopen_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 3,
+      "apparent_bytes": 16731071,
+      "allocated_bytes": 16740352
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp40_gravity_ff6_validated_v3_trimmed_attested_run1",
+      "files": 10,
+      "apparent_bytes": 4636247,
+      "allocated_bytes": 4661248
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp40_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 10,
+      "apparent_bytes": 5194793,
+      "allocated_bytes": 5214208
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp40_validated_v3_trimmed_attested_run1",
+      "files": 13,
+      "apparent_bytes": 4132693,
+      "allocated_bytes": 4157440
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp60_kd2p5_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1",
+      "files": 10,
+      "apparent_bytes": 17440816,
+      "allocated_bytes": 17461248
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew003_kp40_validated_v2_attested_run1",
+      "files": 13,
+      "apparent_bytes": 10658670,
+      "allocated_bytes": 10682368
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew003_validated_v2_attested_run1",
+      "files": 10,
+      "apparent_bytes": 2818197,
+      "allocated_bytes": 2838528
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew005_ee002_kp40_validated_v2_attested_run1",
+      "files": 10,
+      "apparent_bytes": 18834368,
+      "allocated_bytes": 18857984
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew005_ee002_kp40_validated_v3_trimmed_attested_run1",
+      "files": 10,
+      "apparent_bytes": 4201756,
+      "allocated_bytes": 4227072
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew_validated_v2_attested_run1",
+      "files": 10,
+      "apparent_bytes": 2768414,
+      "allocated_bytes": 2793472
+    },
+    {
+      "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_validated_v2_attested_run1",
+      "files": 3,
+      "apparent_bytes": 2619437,
+      "allocated_bytes": 2621440
+    }
+  ],
+  "old_default_dataset_path": "/home/kk/.cache/huggingface/lerobot/local",
+  "old_default_dataset_entries": []
+}

@@ -1,0 +1,48 @@
+# Machine environments, downloads, datasets, and run outputs.
+/miniforge3/
+/hf_cache/
+/pip_cache/
+/datasets/*
+!/datasets/calibration/
+/outputs/
+/logs/
+/imports/
+/.local-archive/
+
+# Python build and development caches.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Credentials and machine-only overrides.
+.env
+.env.*
+!.env.example
+/configs/hardware.env
+*.pem
+*.key
+
+# Preserve old copies in the local backup, outside the source history.
+*.orig
+*.rej
+*~
+.DS_Store
+
+# Model weights are archived separately; bundle metadata stays in Git.
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+!/assets/firefly/smolvla_base-c83c3163b8ca9b7e67c509fffd9121e66cb96205/policy_preprocessor_step_5_normalizer_processor.safetensors
+!/assets/firefly/smolvla_base-c83c3163b8ca9b7e67c509fffd9121e66cb96205/policy_postprocessor_step_0_unnormalizer_processor.safetensors

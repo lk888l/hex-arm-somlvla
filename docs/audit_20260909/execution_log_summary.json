@@ -1,0 +1,1740 @@
+[
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v5/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 596,
+      "inference_chunk": 40,
+      "safety_stop": 1,
+      "visual_phase_transition": 1,
+      "tip_servo_transition": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "visual phase latch entered fail-closed HOLD: external:seeking_timeout"
+    ],
+    "visual_phases": {
+      "seeking": 595,
+      "fault_hold": 1
+    },
+    "tip_phases": {
+      "seeking": 595,
+      "fault_hold": 1
+    },
+    "action_sources": {
+      "inference_hold": 200,
+      "fresh_policy": 396
+    },
+    "inference_latency_s": {
+      "min": 0.13090979900152888,
+      "median": 0.13810166000075697,
+      "p95": 0.14416008944972417,
+      "max": 0.41757382100331597
+    },
+    "control_period_s": {
+      "min": 0.030048427997826366,
+      "median": 0.033469542999228,
+      "p95": 0.03728099409927381,
+      "max": 0.039054920998751186
+    },
+    "camera_frame_age_ms": {
+      "min": 2.056056,
+      "median": 18.523573499999998,
+      "p95": 32.59362075,
+      "max": 38.59383
+    },
+    "jaw_measured_rad": {
+      "min": 0.3083752393722534,
+      "median": 0.3083752393722534,
+      "p95": 0.3083752393722534,
+      "max": 0.3083752393722534
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.47585333098973753,
+        0.457001286921913
+      ],
+      "contour_area_fraction": 0.01099609375
+    },
+    "mtime_ns": 1787208977392222617
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v4/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 908,
+      "inference_chunk": 60,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "30-second tip-servo ACT ended before the reviewed probe progress gate; terminal tip phase=seeking"
+    ],
+    "visual_phases": {
+      "seeking": 908
+    },
+    "tip_phases": {
+      "seeking": 908
+    },
+    "action_sources": {
+      "inference_hold": 308,
+      "fresh_policy": 600
+    },
+    "inference_latency_s": {
+      "min": 0.1317770149998978,
+      "median": 0.13959880450011042,
+      "p95": 0.14852853465067709,
+      "max": 0.40132175700000516
+    },
+    "control_period_s": {
+      "min": 0.029372935000537836,
+      "median": 0.03344634499990207,
+      "p95": 0.03746408439992592,
+      "max": 0.040084231999571784
+    },
+    "camera_frame_age_ms": {
+      "min": 2.106676,
+      "median": 19.063398499999998,
+      "p95": 34.0705143,
+      "max": 35.896699
+    },
+    "jaw_measured_rad": {
+      "min": 0.30168092250823975,
+      "median": 0.30598756670951843,
+      "p95": 0.4100976884365082,
+      "max": 0.4130273759365082
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.34001197851859527,
+        0.9188074623254529
+      ],
+      "contour_area_fraction": 0.015696614583333334
+    },
+    "mtime_ns": 1787200121244170578
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v4_act1_seeking_boundary_miss/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 908,
+      "inference_chunk": 60,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "30-second tip-servo ACT ended before the reviewed probe progress gate; terminal tip phase=seeking"
+    ],
+    "visual_phases": {
+      "seeking": 908
+    },
+    "tip_phases": {
+      "seeking": 908
+    },
+    "action_sources": {
+      "inference_hold": 308,
+      "fresh_policy": 600
+    },
+    "inference_latency_s": {
+      "min": 0.1317770149998978,
+      "median": 0.13959880450011042,
+      "p95": 0.14852853465067709,
+      "max": 0.40132175700000516
+    },
+    "control_period_s": {
+      "min": 0.029372935000537836,
+      "median": 0.03344634499990207,
+      "p95": 0.03746408439992592,
+      "max": 0.040084231999571784
+    },
+    "camera_frame_age_ms": {
+      "min": 2.106676,
+      "median": 19.063398499999998,
+      "p95": 34.0705143,
+      "max": 35.896699
+    },
+    "jaw_measured_rad": {
+      "min": 0.30168092250823975,
+      "median": 0.30598756670951843,
+      "p95": 0.4100976884365082,
+      "max": 0.4130273759365082
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.34001197851859527,
+        0.9188074623254529
+      ],
+      "contour_area_fraction": 0.015696614583333334
+    },
+    "mtime_ns": 1787200121244170578
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v3/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 907,
+      "inference_chunk": 60,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "30-second tip-servo ACT ended before the reviewed probe progress gate; terminal tip phase=seeking"
+    ],
+    "visual_phases": {
+      "seeking": 907
+    },
+    "tip_phases": {
+      "seeking": 907
+    },
+    "action_sources": {
+      "inference_hold": 308,
+      "fresh_policy": 599
+    },
+    "inference_latency_s": {
+      "min": 0.14085112500015384,
+      "median": 0.15175086899989765,
+      "p95": 0.15841203505028714,
+      "max": 0.4261803709996457
+    },
+    "control_period_s": {
+      "min": 0.02491365100013354,
+      "median": 0.033413201999792363,
+      "p95": 0.03754254425007275,
+      "max": 0.03953631700005644
+    },
+    "camera_frame_age_ms": {
+      "min": 1.923753,
+      "median": 19.710619,
+      "p95": 34.8016329,
+      "max": 35.833427
+    },
+    "jaw_measured_rad": {
+      "min": 0.30207639932632446,
+      "median": 0.30596187710762024,
+      "p95": 0.4102148413658142,
+      "max": 0.4127160906791687
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.3685277998938429,
+        0.9296315463552725
+      ],
+      "contour_area_fraction": 0.012776692708333334
+    },
+    "mtime_ns": 1787196697845698884
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v3_act1_seeking_geometry_mismatch/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 907,
+      "inference_chunk": 60,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "30-second tip-servo ACT ended before the reviewed probe progress gate; terminal tip phase=seeking"
+    ],
+    "visual_phases": {
+      "seeking": 907
+    },
+    "tip_phases": {
+      "seeking": 907
+    },
+    "action_sources": {
+      "inference_hold": 308,
+      "fresh_policy": 599
+    },
+    "inference_latency_s": {
+      "min": 0.14085112500015384,
+      "median": 0.15175086899989765,
+      "p95": 0.15841203505028714,
+      "max": 0.4261803709996457
+    },
+    "control_period_s": {
+      "min": 0.02491365100013354,
+      "median": 0.033413201999792363,
+      "p95": 0.03754254425007275,
+      "max": 0.03953631700005644
+    },
+    "camera_frame_age_ms": {
+      "min": 1.923753,
+      "median": 19.710619,
+      "p95": 34.8016329,
+      "max": 35.833427
+    },
+    "jaw_measured_rad": {
+      "min": 0.30207639932632446,
+      "median": 0.30596187710762024,
+      "p95": 0.4102148413658142,
+      "max": 0.4127160906791687
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.3685277998938429,
+        0.9296315463552725
+      ],
+      "contour_area_fraction": 0.012776692708333334
+    },
+    "mtime_ns": 1787196697845698884
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v2/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 906,
+      "inference_chunk": 60,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "30-second tip-servo ACT ended before the reviewed probe progress gate; terminal tip phase=seeking"
+    ],
+    "visual_phases": {
+      "seeking": 906
+    },
+    "tip_phases": {
+      "seeking": 906
+    },
+    "action_sources": {
+      "inference_hold": 308,
+      "fresh_policy": 598
+    },
+    "inference_latency_s": {
+      "min": 0.13430563499423442,
+      "median": 0.14195084200400743,
+      "p95": 0.14981493360028253,
+      "max": 0.42329174400219927
+    },
+    "control_period_s": {
+      "min": 0.018926071999885608,
+      "median": 0.033448244001192506,
+      "p95": 0.03579412840335862,
+      "max": 0.05139922400121577
+    },
+    "camera_frame_age_ms": {
+      "min": 1.832602,
+      "median": 18.779289,
+      "p95": 34.04737575,
+      "max": 36.36274
+    },
+    "jaw_measured_rad": {
+      "min": 0.3020946979522705,
+      "median": 0.30557188391685486,
+      "p95": 0.4101269543170929,
+      "max": 0.4118921160697937
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.4236777902816251,
+        0.6207474415204678
+      ],
+      "contour_area_fraction": 0.011751302083333333
+    },
+    "mtime_ns": 1787144213888788733
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_tip_probe_v1/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 906,
+      "inference_chunk": 61,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "30-second tip-servo ACT ended before the reviewed probe progress gate; terminal tip phase=seeking"
+    ],
+    "visual_phases": {
+      "seeking": 906
+    },
+    "tip_phases": {
+      "seeking": 906
+    },
+    "action_sources": {
+      "inference_hold": 303,
+      "fresh_policy": 603
+    },
+    "inference_latency_s": {
+      "min": 0.13239728700136766,
+      "median": 0.13949007100018207,
+      "p95": 0.15374849699946935,
+      "max": 0.41441752800164977
+    },
+    "control_period_s": {
+      "min": 0.029950568001368083,
+      "median": 0.033450947998062475,
+      "p95": 0.03700487399837584,
+      "max": 0.03924195399667951
+    },
+    "camera_frame_age_ms": {
+      "min": 1.824836,
+      "median": 19.1669345,
+      "p95": 34.243415,
+      "max": 35.934448
+    },
+    "jaw_measured_rad": {
+      "min": 0.3021789789199829,
+      "median": 0.3059142827987671,
+      "p95": 0.41022950410842896,
+      "max": 0.41022950410842896
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.3833486888731396,
+        0.5688008898338451
+      ],
+      "contour_area_fraction": 0.011482747395833333
+    },
+    "mtime_ns": 1787139494143199831
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_visual_latch_v1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 2740,
+      "act_start_reset_complete": 1,
+      "act_start_pose_preflight": 1,
+      "inference_chunk": 181,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "90-second visual ACT ended before task_done; terminal phase=seeking"
+    ],
+    "visual_phases": {
+      "null": 48,
+      "seeking": 2692
+    },
+    "tip_phases": {
+      "null": 2740
+    },
+    "action_sources": {
+      "null": 2740
+    },
+    "inference_latency_s": {
+      "min": 0.13055899599930854,
+      "median": 0.1403231290023541,
+      "p95": 0.14852080600030604,
+      "max": 0.4140059739984281
+    },
+    "control_period_s": {
+      "min": 0.00756190700121806,
+      "median": 0.03342940199945588,
+      "p95": 0.03738447869873198,
+      "max": 0.04112767600236111
+    },
+    "camera_frame_age_ms": {
+      "min": 1.60529,
+      "median": 18.746466499999997,
+      "p95": 33.799126599999994,
+      "max": 36.697993
+    },
+    "jaw_measured_rad": {
+      "min": 0.30418574810028076,
+      "median": 0.4102844297885895,
+      "p95": 0.41028809547424316,
+      "max": 0.4104272723197937
+    },
+    "last_red": {
+      "centroid_norm": [
+        0.6387993728315986,
+        0.786542382053791
+      ],
+      "contour_area_fraction": 0.0060986328125
+    },
+    "mtime_ns": 1787130698595324113
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_visual_latch_v1/act_90s_start_reset_bug.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 89,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "ACT start reset made no feedback-paced progress for 90 frames at nominal waypoint 0/4; failed-joint errors=(0.000102996826171875, 0.00023968517780303955, 0.0008726045489311218)"
+    ],
+    "visual_phases": {
+      "null": 89
+    },
+    "tip_phases": {
+      "null": 89
+    },
+    "action_sources": {
+      "null": 89
+    },
+    "inference_latency_s": null,
+    "control_period_s": {
+      "min": 0.031424340999365086,
+      "median": 0.03334098100094707,
+      "p95": 0.03399782205124211,
+      "max": 0.04616669099777937
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.30964231491088867,
+      "median": 0.3096643388271332,
+      "p95": 0.30967164039611816,
+      "max": 0.30967164039611816
+    },
+    "last_red": null,
+    "mtime_ns": 1787129594999839235
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": "synchronous_hold"
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 2687,
+      "inference_chunk": 172,
+      "stage_complete": 1,
+      "disconnected": 1
+    },
+    "stops": [],
+    "visual_phases": {
+      "null": 2687
+    },
+    "tip_phases": {
+      "null": 2687
+    },
+    "action_sources": {
+      "null": 2687
+    },
+    "inference_latency_s": {
+      "min": 0.13269600100102252,
+      "median": 0.14614515799985384,
+      "p95": 0.3398454558497176,
+      "max": 0.5249100429991813
+    },
+    "control_period_s": {
+      "min": 0.011791711000114447,
+      "median": 0.033432824500778224,
+      "p95": 0.03621126524967622,
+      "max": 0.05421830100021907
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3034936785697937,
+      "median": 0.36021602153778076,
+      "p95": 0.4194078505039215,
+      "max": 0.4285839796066284
+    },
+    "last_red": null,
+    "mtime_ns": 1787122023605596961
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fullcycle_v4_100k_attested_run1/act_90s_pipelined_stale_stop_20260819.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_100k_attested_run1/checkpoints/100000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_fullcycle_v4",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_pose_preflight": 1,
+      "command_cycle": 361,
+      "inference_chunk": 35,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.169157 rad exceeded 0.150000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 361
+    },
+    "tip_phases": {
+      "null": 361
+    },
+    "action_sources": {
+      "null": 361
+    },
+    "inference_latency_s": {
+      "min": 0.13226432199917326,
+      "median": 0.14120943200032343,
+      "p95": 0.15429803489969343,
+      "max": 0.5305835780000052
+    },
+    "control_period_s": {
+      "min": 0.03045358499912254,
+      "median": 0.033374743499734905,
+      "p95": 0.035832995549026234,
+      "max": 0.0396665309999662
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3035229444503784,
+      "median": 0.3050537109375,
+      "p95": 0.3070642352104187,
+      "max": 0.30781862139701843
+    },
+    "last_red": null,
+    "mtime_ns": 1787121894678892742
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_j3j4_kp72_kd2p75_eekp150_close060_phase_latch_v6_recovery_preopen_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_recovery_start_preflight": 1,
+      "act_start_ee_preopen_begin": 1,
+      "command_cycle": 1806,
+      "act_start_ee_preopen_complete": 1,
+      "act_start_pose_preflight": 1,
+      "inference_chunk": 180,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "policy did not reach and confirm the demonstrated pickup pose within 180 inference chunks; corrected actions were not sent"
+    ],
+    "visual_phases": {
+      "null": 1806
+    },
+    "tip_phases": {
+      "null": 1806
+    },
+    "action_sources": {
+      "null": 1806
+    },
+    "inference_latency_s": {
+      "min": 0.12308000600023661,
+      "median": 0.13022098500005086,
+      "p95": 0.13468558744898473,
+      "max": 0.3779297080000106
+    },
+    "control_period_s": {
+      "min": 0.0042501600000832696,
+      "median": 0.03334996100238641,
+      "p95": 0.03461207180007477,
+      "max": 0.04327389299942297
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.31816408038139343,
+      "median": 0.3929186761379242,
+      "p95": 0.4253714308142662,
+      "max": 0.4347912669181824
+    },
+    "last_red": null,
+    "mtime_ns": 1786970983532179701
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v5_recovery_preopen_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_recovery_start_preflight": 1,
+      "act_start_ee_preopen_begin": 1,
+      "command_cycle": 1240,
+      "act_start_ee_preopen_complete": 1,
+      "act_start_pose_preflight": 1,
+      "inference_chunk": 121,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.051100 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 1240
+    },
+    "tip_phases": {
+      "null": 1240
+    },
+    "action_sources": {
+      "null": 1240
+    },
+    "inference_latency_s": {
+      "min": 0.1272833549992356,
+      "median": 0.13628323000011733,
+      "p95": 0.1458109710001736,
+      "max": 0.4326093880008557
+    },
+    "control_period_s": {
+      "min": 0.007087711999702151,
+      "median": 0.03335804800008191,
+      "p95": 0.03542022880010336,
+      "max": 0.045341981000092346
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3109130859375,
+      "median": 0.380134254693985,
+      "p95": 0.4244666710495949,
+      "max": 0.4318249225616455
+    },
+    "last_red": null,
+    "mtime_ns": 1786962320245036702
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v3_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 105,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "ACT start reset made no feedback-paced progress for 90 frames at nominal waypoint 14/115; failed-joint errors=(0.013720134031792952, 0.02201401238496381)"
+    ],
+    "visual_phases": {
+      "null": 105
+    },
+    "tip_phases": {
+      "null": 105
+    },
+    "action_sources": {
+      "null": 105
+    },
+    "inference_latency_s": null,
+    "control_period_s": {
+      "min": 0.031186782000077073,
+      "median": 0.03335389999938343,
+      "p95": 0.0340454503500041,
+      "max": 0.034512165999331046
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3142675757408142,
+      "median": 0.3142675757408142,
+      "p95": 0.3142675757408142,
+      "max": 0.3142675757408142
+    },
+    "last_red": null,
+    "mtime_ns": 1786958172697124426
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v3_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s_reset_attempt4_j4_candidate_lead_stop.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 105,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "ACT start reset made no feedback-paced progress for 90 frames at nominal waypoint 14/115; failed-joint errors=(0.013720134031792952, 0.02201401238496381)"
+    ],
+    "visual_phases": {
+      "null": 105
+    },
+    "tip_phases": {
+      "null": 105
+    },
+    "action_sources": {
+      "null": 105
+    },
+    "inference_latency_s": null,
+    "control_period_s": {
+      "min": 0.031186782000077073,
+      "median": 0.03335389999938343,
+      "p95": 0.0340454503500041,
+      "max": 0.034512165999331046
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3142675757408142,
+      "median": 0.3142675757408142,
+      "p95": 0.3142675757408142,
+      "max": 0.3142675757408142
+    },
+    "last_red": null,
+    "mtime_ns": 1786958172697124426
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v3_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s_reset_attempt3_j4_candidate_lead_stop.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 97,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "ACT start reset made no feedback-paced progress for 90 frames at nominal waypoint 8/116; failed-joint errors=(0.010487383810475315, 0.015094982911377564)"
+    ],
+    "visual_phases": {
+      "null": 97
+    },
+    "tip_phases": {
+      "null": 97
+    },
+    "action_sources": {
+      "null": 97
+    },
+    "inference_latency_s": null,
+    "control_period_s": {
+      "min": 0.022052353000617586,
+      "median": 0.03329060800024308,
+      "p95": 0.0342863452497113,
+      "max": 0.04520014599984279
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3142675757408142,
+      "median": 0.3142675757408142,
+      "p95": 0.3142675757408142,
+      "max": 0.3142675757408142
+    },
+    "last_red": null,
+    "mtime_ns": 1786957668445217166
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v3_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s_reset_attempt2_feedback_gate_stop.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 94,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "ACT start reset made no feedback-paced progress for 90 frames at nominal waypoint 5/116; failed-joint errors=(0.011735794873630967, 0.010109638603589419)"
+    ],
+    "visual_phases": {
+      "null": 94
+    },
+    "tip_phases": {
+      "null": 94
+    },
+    "action_sources": {
+      "null": 94
+    },
+    "inference_latency_s": null,
+    "control_period_s": {
+      "min": 0.03133888000047591,
+      "median": 0.0333574750002299,
+      "p95": 0.03403158339933725,
+      "max": 0.034496516000217525
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3142712116241455,
+      "median": 0.3142712116241455,
+      "p95": 0.3142712116241455,
+      "max": 0.3142712116241455
+    },
+    "last_red": null,
+    "mtime_ns": 1786956334720275905
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v3_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s_reset_attempt1_j3_tracking_stop.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "act_start_reset_begin": 1,
+      "command_cycle": 28,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.054588 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 28
+    },
+    "tip_phases": {
+      "null": 28
+    },
+    "action_sources": {
+      "null": 28
+    },
+    "inference_latency_s": null,
+    "control_period_s": {
+      "min": 0.02467852799964021,
+      "median": 0.03337119500065455,
+      "p95": 0.03396346429981349,
+      "max": 0.04286880700055917
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.30720698833465576,
+      "median": 0.31024476885795593,
+      "p95": 0.3137810632586479,
+      "max": 0.31398189067840576
+    },
+    "last_red": null,
+    "mtime_ns": 1786955173000432117
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v2_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 2481,
+      "inference_chunk": 247,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.057770 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 2481
+    },
+    "tip_phases": {
+      "null": 2481
+    },
+    "action_sources": {
+      "null": 2481
+    },
+    "inference_latency_s": {
+      "min": 0.12891708300003302,
+      "median": 0.13349564000009195,
+      "p95": 0.14222574970031018,
+      "max": 0.5279765599998427
+    },
+    "control_period_s": {
+      "min": 0.029356304999964777,
+      "median": 0.03336044749994471,
+      "p95": 0.03588802864990157,
+      "max": 0.0385229979997348
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.30177247524261475,
+      "median": 0.30488526821136475,
+      "p95": 0.3078039586544037,
+      "max": 0.3218444883823395
+    },
+    "last_red": null,
+    "mtime_ns": 1786949387672544160
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_phase_latch_v1_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 2702,
+      "inference_chunk": 269,
+      "stage_complete": 1,
+      "disconnected": 1
+    },
+    "stops": [],
+    "visual_phases": {
+      "null": 2702
+    },
+    "tip_phases": {
+      "null": 2702
+    },
+    "action_sources": {
+      "null": 2702
+    },
+    "inference_latency_s": {
+      "min": 0.12852639899938367,
+      "median": 0.1374387640025816,
+      "p95": 0.14600022559898207,
+      "max": 0.4072186490011518
+    },
+    "control_period_s": {
+      "min": 0.029830094004864804,
+      "median": 0.03336567299993476,
+      "p95": 0.036168277998513076,
+      "max": 0.037896394002018496
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3023693561553955,
+      "median": 0.34552915394306183,
+      "p95": 0.3660386472940445,
+      "max": 0.3956213593482971
+    },
+    "last_red": null,
+    "mtime_ns": 1786712269475498824
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_fast90_arm003_j3_002_ee003_kp60_kd2p5_eekp150_close060_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_90s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 2703,
+      "inference_chunk": 269,
+      "stage_complete": 1,
+      "disconnected": 1
+    },
+    "stops": [],
+    "visual_phases": {
+      "null": 2703
+    },
+    "tip_phases": {
+      "null": 2703
+    },
+    "action_sources": {
+      "null": 2703
+    },
+    "inference_latency_s": {
+      "min": 0.12809827199816937,
+      "median": 0.1380143170026713,
+      "p95": 0.14546817819937133,
+      "max": 0.4096908240026096
+    },
+    "control_period_s": {
+      "min": 0.029573045001598075,
+      "median": 0.03336125599889783,
+      "p95": 0.0359648298996035,
+      "max": 0.037369099001807626
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.302314430475235,
+      "median": 0.38291746377944946,
+      "p95": 0.40135875940322874,
+      "max": 0.41483640670776367
+    },
+    "last_red": null,
+    "mtime_ns": 1786709153420644158
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp60_kd2p5_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_65s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 1471,
+      "inference_chunk": 146,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "EE tracking error 0.023824 exceeded 0.020000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 1471
+    },
+    "tip_phases": {
+      "null": 1471
+    },
+    "action_sources": {
+      "null": 1471
+    },
+    "inference_latency_s": {
+      "min": 0.12723405699944124,
+      "median": 0.13073859949872713,
+      "p95": 0.13728587225068623,
+      "max": 0.38985490900086006
+    },
+    "control_period_s": {
+      "min": 0.030720001999725355,
+      "median": 0.03337725200071873,
+      "p95": 0.035740395400534905,
+      "max": 0.03679407000163337
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.304779052734375,
+      "median": 0.3071191608905792,
+      "p95": 0.39563417434692383,
+      "max": 0.40164914727211
+    },
+    "last_red": null,
+    "mtime_ns": 1786707022317750968
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp40_gravity_ff8_gr80_payload_validated_v3_trimmed_attested_run1/act_3s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 40,
+      "inference_chunk": 3,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.053069 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 40
+    },
+    "tip_phases": {
+      "null": 40
+    },
+    "action_sources": {
+      "null": 40
+    },
+    "inference_latency_s": {
+      "min": 0.12972552200153586,
+      "median": 0.1387555080000311,
+      "p95": 0.36507622740136864,
+      "max": 0.3902229740015173
+    },
+    "control_period_s": {
+      "min": 0.031602562998159556,
+      "median": 0.03335667999999714,
+      "p95": 0.03493809379979212,
+      "max": 0.04362819499874604
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.31028687953948975,
+      "median": 0.3152123838663101,
+      "p95": 0.3176101312041283,
+      "max": 0.3181127905845642
+    },
+    "last_red": null,
+    "mtime_ns": 1786702397788116030
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp40_gravity_ff6_validated_v3_trimmed_attested_run1/act_3s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "arm_gravity_ff_model_loaded": 1,
+      "controller_contract": 1,
+      "arm_gravity_ff_preflight": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 45,
+      "inference_chunk": 4,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.054713 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 45
+    },
+    "tip_phases": {
+      "null": 45
+    },
+    "action_sources": {
+      "null": 45
+    },
+    "inference_latency_s": {
+      "min": 0.13211064700226416,
+      "median": 0.13779771800000162,
+      "p95": 0.36344379390047826,
+      "max": 0.40243143000043347
+    },
+    "control_period_s": {
+      "min": 0.025713193997944472,
+      "median": 0.03337683800236846,
+      "p95": 0.03422938344974682,
+      "max": 0.04444712999975309
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.30910399556159973,
+      "median": 0.31104493141174316,
+      "p95": 0.3171943187713623,
+      "max": 0.3179882764816284
+    },
+    "last_red": null,
+    "mtime_ns": 1786700359151793442
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew002_ee002_kp40_validated_v3_trimmed_attested_run1/act_65s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 43,
+      "inference_chunk": 4,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.054790 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 43
+    },
+    "tip_phases": {
+      "null": 43
+    },
+    "action_sources": {
+      "null": 43
+    },
+    "inference_latency_s": {
+      "min": 0.1296241790005297,
+      "median": 0.13710616999742342,
+      "p95": 0.36226555485172857,
+      "max": 0.40131735000250046
+    },
+    "control_period_s": {
+      "min": 0.03120043499802705,
+      "median": 0.033341004000249086,
+      "p95": 0.036071496099975765,
+      "max": 0.036520686000585556
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.30628418922424316,
+      "median": 0.30705687403678894,
+      "p95": 0.3114477813243866,
+      "max": 0.31147336959838867
+    },
+    "last_red": null,
+    "mtime_ns": 1786698143051296188
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew005_ee002_kp40_validated_v3_trimmed_attested_run1/act_65s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v3_trimmed_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v3_trimmed",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 29,
+      "inference_chunk": 2,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.060051 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 29
+    },
+    "tip_phases": {
+      "null": 29
+    },
+    "action_sources": {
+      "null": 29
+    },
+    "inference_latency_s": {
+      "min": 0.12954156400155625,
+      "median": 0.2668580045010458,
+      "p95": 0.39044280095058637,
+      "max": 0.40417444500053534
+    },
+    "control_period_s": {
+      "min": 0.03265741699942737,
+      "median": 0.03339068249988486,
+      "p95": 0.03442042544957075,
+      "max": 0.03827316599927144
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3063061237335205,
+      "median": 0.30705687403678894,
+      "p95": 0.3071300983428955,
+      "max": 0.3071300983428955
+    },
+    "last_red": null,
+    "mtime_ns": 1786696587164136168
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew005_ee002_kp40_validated_v2_attested_run1/act_65s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v2_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v2",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 1955,
+      "inference_chunk": 195,
+      "stage_complete": 1,
+      "disconnected": 1
+    },
+    "stops": [],
+    "visual_phases": {
+      "null": 1955
+    },
+    "tip_phases": {
+      "null": 1955
+    },
+    "action_sources": {
+      "null": 1955
+    },
+    "inference_latency_s": {
+      "min": 0.1285733889999392,
+      "median": 0.13196771200091462,
+      "p95": 0.14235959429934156,
+      "max": 0.3894460359988443
+    },
+    "control_period_s": {
+      "min": 0.02391882899974007,
+      "median": 0.03334411600008025,
+      "p95": 0.03484462549968157,
+      "max": 0.04220295699997223
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3045080602169037,
+      "median": 0.3057604730129242,
+      "p95": 0.3067529499530792,
+      "max": 0.30937501788139343
+    },
+    "last_red": null,
+    "mtime_ns": 1786688211324295575
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew003_kp40_validated_v2_attested_run1/act_30s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v2_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v2",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 909,
+      "inference_chunk": 90,
+      "stage_complete": 1,
+      "disconnected": 1
+    },
+    "stops": [],
+    "visual_phases": {
+      "null": 909
+    },
+    "tip_phases": {
+      "null": 909
+    },
+    "action_sources": {
+      "null": 909
+    },
+    "inference_latency_s": {
+      "min": 0.13061512899912486,
+      "median": 0.13349836900033552,
+      "p95": 0.13861902205062507,
+      "max": 0.38831516499885765
+    },
+    "control_period_s": {
+      "min": 0.02560923199962417,
+      "median": 0.03334889950019715,
+      "p95": 0.03453397380026217,
+      "max": 0.04104070599896659
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.30553343892097473,
+      "median": 0.30640506744384766,
+      "p95": 0.3081371784210205,
+      "max": 0.31031250953674316
+    },
+    "last_red": null,
+    "mtime_ns": 1786686453740254898
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew003_kp40_validated_v2_attested_run1/act_3s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v2_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v2",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 103,
+      "inference_chunk": 9,
+      "stage_complete": 1,
+      "disconnected": 1
+    },
+    "stops": [],
+    "visual_phases": {
+      "null": 103
+    },
+    "tip_phases": {
+      "null": 103
+    },
+    "action_sources": {
+      "null": 103
+    },
+    "inference_latency_s": {
+      "min": 0.13028023299921188,
+      "median": 0.13400701400041726,
+      "p95": 0.3020590911997714,
+      "max": 0.4129886099999567
+    },
+    "control_period_s": {
+      "min": 0.03072562299985293,
+      "median": 0.03334300649976285,
+      "p95": 0.034692771150321274,
+      "max": 0.03682367600049474
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3058153986930847,
+      "median": 0.30658817291259766,
+      "p95": 0.30705320835113525,
+      "max": 0.30710816383361816
+    },
+    "last_red": null,
+    "mtime_ns": 1786679359770861500
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew003_validated_v2_attested_run1/act_3s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v2_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v2",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 20,
+      "inference_chunk": 1,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.053245 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 20
+    },
+    "tip_phases": {
+      "null": 20
+    },
+    "action_sources": {
+      "null": 20
+    },
+    "inference_latency_s": {
+      "min": 0.3990292829998907,
+      "median": 0.3990292829998907,
+      "p95": 0.3990292829998907,
+      "max": 0.3990292829998907
+    },
+    "control_period_s": {
+      "min": 0.03298775299981571,
+      "median": 0.03331634300002406,
+      "p95": 0.03415061220030111,
+      "max": 0.03432829199982734
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3063610792160034,
+      "median": 0.30706787109375,
+      "p95": 0.30706787109375,
+      "max": 0.30706787109375
+    },
+    "last_red": null,
+    "mtime_ns": 1786679130222417348
+  },
+  {
+    "path": "lerobot-robot-hexbase/outputs/firefly_deployment_hold_slew_validated_v2_attested_run1/act_3s.jsonl",
+    "config": {
+      "checkpoint": "/home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_validated_v2_attested_run1/checkpoints/030000/pretrained_model",
+      "dataset_repo_id": "local/firefly_y6_manual_validated_v2",
+      "policy_runtime_role": null,
+      "act_chunk_inference_mode": null
+    },
+    "events": {
+      "deployment_provenance": 1,
+      "controller_contract": 1,
+      "control_acquired": 1,
+      "connected": 1,
+      "command_cycle": 18,
+      "inference_chunk": 1,
+      "safety_stop": 1,
+      "disconnected": 1
+    },
+    "stops": [
+      "arm tracking error 0.058019 rad exceeded 0.050000 for three consecutive frames"
+    ],
+    "visual_phases": {
+      "null": 18
+    },
+    "tip_phases": {
+      "null": 18
+    },
+    "action_sources": {
+      "null": 18
+    },
+    "inference_latency_s": {
+      "min": 0.39192037099974186,
+      "median": 0.39192037099974186,
+      "p95": 0.39192037099974186,
+      "max": 0.39192037099974186
+    },
+    "control_period_s": {
+      "min": 0.03184658899999704,
+      "median": 0.03345889000001989,
+      "p95": 0.03469565359991975,
+      "max": 0.03610270799981663
+    },
+    "camera_frame_age_ms": null,
+    "jaw_measured_rad": {
+      "min": 0.3059362769126892,
+      "median": 0.3068298399448395,
+      "p95": 0.3068298399448395,
+      "max": 0.3068298399448395
+    },
+    "last_red": null,
+    "mtime_ns": 1786678897365717458
+  }
+]
