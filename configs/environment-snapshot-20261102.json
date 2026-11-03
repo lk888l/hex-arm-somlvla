@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-11-02T18:06:05+08:00",
+  "scope": "installed local environments; fresh-machine installation not yet tested",
+  "system": {
+    "os_release": {
+      "PRETTY_NAME": "Ubuntu 24.04.5 LTS",
+      "NAME": "Ubuntu",
+      "VERSION_ID": "24.04",
+      "VERSION": "24.04.5 LTS (Noble Numbat)",
+      "VERSION_CODENAME": "noble",
+      "ID": "ubuntu",
+      "ID_LIKE": "debian",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "UBUNTU_CODENAME": "noble",
+      "LOGO": "ubuntu-logo"
+    },
+    "architecture": "x86_64",
+    "kernel": "7.0.0-42-generic",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU, 595.99.02, 12227 MiB",
+    "conda_version": "conda 26.3.2",
+    "packages": [
+      "build-essential\t12.10ubuntu1\tii ",
+      "ca-certificates\t20260816ubuntu0.24.04.1\tii ",
+      "can-utils\t2023.03-1\tii ",
+      "curl\t8.5.0-2ubuntu10.16\tii ",
+      "git\t1:2.43.0-1ubuntu7.4\tii ",
+      "iproute2\t6.1.0-1ubuntu6.4\tii ",
+      "libgl1:amd64\t1.7.0-1build1\tii ",
+      "libglib2.0-0t64:amd64\t2.80.0-6ubuntu3.10\tii ",
+      "libusb-1.0-0:amd64\t2:1.0.27-1\tii ",
+      "pkg-config:amd64\t1.8.1-2build1\tii ",
+      "usbutils\t1:017-3build1\tii"
+    ]
+  },
+  "package_sources": {
+    "conda": "https://conda.anaconda.org/conda-forge",
+    "python_packages": "https://pypi.org/simple",
+    "torch_and_torchvision": "https://download.pytorch.org/whl/cu128",
+    "note": "Install these pinned CUDA wheels first; requirements are version snapshots, not pip artifact hash locks."
+  },
+  "plugin": {
+    "path": "lerobot-robot-hexbase",
+    "commit": "287f7388a45babfeb31be40e6c0557d6a4181f1f",
+    "version": "0.3.0",
+    "installation": "editable; I/O environment only"
+  },
+  "environments": {
+    "lerobot-io": {
+      "python_version": "3.12.13",
+      "python_executable": "/home/kk/kk_data/lerobot/miniforge3/envs/lerobot-io/bin/python",
+      "python_sha256": "ee06f92c92a83ac0c08fd9c4e6b7290edd6206f24269d60305a06cb6e3817762",
+      "conda_package_count": 138,
+      "pip_non_editable_package_count": 114,
+      "conda_lock": "configs/locks/lerobot-io-linux-64.explicit.txt",
+      "conda_lock_sha256": "755b624129d2a0a5d9410d87a2feb520722c67336ad4d84054a1b8cb3c310242",
+      "requirements": "configs/lerobot-io.requirements.txt",
+      "requirements_sha256": "53d9facbd01604d76f4f65bc0b97b914fe03fd04155364d2e128f383bd39627f",
+      "pip_check": "No broken requirements found.",
+      "core_conda_builds": {
+        "ffmpeg": {
+          "version": "7.1.1",
+          "build": "gpl_hbbdf940_911",
+          "subdir": "linux-64",
+          "sha256": "fdbec8d65b252c08a73ee418eb5b0a4d05579556b432d715adde7f783562e9b4"
+        },
+        "pip": {
+          "version": "26.1.2",
+          "build": "pyh8b19718_0",
+          "subdir": "noarch",
+          "sha256": "29b7d75bf81ad11645a8e320b369abdc90a92b93f2a9178e853d9dddf82e5106"
+        },
+        "python": {
+          "version": "3.12.13",
+          "build": "hd63d673_0_cpython",
+          "subdir": "linux-64",
+          "sha256": "a44655c1c3e1d43ed8704890a91e12afd68130414ea2c0872e154e5633a13d7e"
+        },
+        "wheel": {
+          "version": "0.47.0",
+          "build": "pyhd8ed1ab_0",
+          "subdir": "noarch",
+          "sha256": "9e156ffaefb8463437144326ada4b85d1de17961b9997ac5f1cbbaf747bd8bed"
+        }
+      }
+    },
+    "lerobot-train": {
+      "python_version": "3.12.13",
+      "python_executable": "/home/kk/kk_data/lerobot/miniforge3/envs/lerobot-train/bin/python",
+      "python_sha256": "aa584ad7b853904b0ae7fb5a8f44d9d27960e05de1f4838855f93fa4359df869",
+      "conda_package_count": 138,
+      "pip_non_editable_package_count": 109,
+      "conda_lock": "configs/locks/lerobot-train-linux-64.explicit.txt",
+      "conda_lock_sha256": "755b624129d2a0a5d9410d87a2feb520722c67336ad4d84054a1b8cb3c310242",
+      "requirements": "configs/lerobot-train.requirements.txt",
+      "requirements_sha256": "5e8e872f34179d7f43ac4bb85cd3da035d30888c3270f5ba834b1a04e06ff4e1",
+      "pip_check": "No broken requirements found.",
+      "core_conda_builds": {
+        "ffmpeg": {
+          "version": "7.1.1",
+          "build": "gpl_hbbdf940_911",
+          "subdir": "linux-64",
+          "sha256": "fdbec8d65b252c08a73ee418eb5b0a4d05579556b432d715adde7f783562e9b4"
+        },
+        "pip": {
+          "version": "26.1.2",
+          "build": "pyh8b19718_0",
+          "subdir": "noarch",
+          "sha256": "29b7d75bf81ad11645a8e320b369abdc90a92b93f2a9178e853d9dddf82e5106"
+        },
+        "python": {
+          "version": "3.12.13",
+          "build": "hd63d673_0_cpython",
+          "subdir": "linux-64",
+          "sha256": "a44655c1c3e1d43ed8704890a91e12afd68130414ea2c0872e154e5633a13d7e"
+        },
+        "wheel": {
+          "version": "0.47.0",
+          "build": "pyhd8ed1ab_0",
+          "subdir": "noarch",
+          "sha256": "9e156ffaefb8463437144326ada4b85d1de17961b9997ac5f1cbbaf747bd8bed"
+        }
+      }
+    }
+  },
+  "realsense_udev_rule": {
+    "path": "configs/udev/99-realsense-d405-d435.rules",
+    "original_path": "/etc/udev/rules.d/99-realsense-d405-d435.rules",
+    "sha256": "846a26e7a200c8b6208475e197ea192706f2419e8ba2a02eecd65ee6b42e58f8"
+  }
+}

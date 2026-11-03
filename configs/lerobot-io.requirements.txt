@@ -1,3 +1,7 @@
+# Installed-version snapshot: 2026-11-02, Python 3.12.13, Linux x86_64.
+# Install torch/torchvision from the official cu128 index first; see docs/INSTALL.md.
+# The editable HexBase plugin is installed separately in lerobot-io only.
+# This is a version inventory, not a pip artifact hash lock.
 accelerate==1.14.0
 aiohappyeyeballs==2.7.1
 aiohttp==3.14.3
@@ -18,6 +22,7 @@ deepdiff==8.6.2
 dill==0.4.1
 docopt==0.6.2
 draccus==0.10.0
+eclipse-zenoh==1.9.0
 einops==0.8.2
 evdev==1.9.3
 Farama-Notifications==0.0.6
@@ -25,6 +30,8 @@ filelock==3.29.0
 foxglove-sdk==0.25.3
 frozenlist==1.8.0
 fsspec==2026.2.0
+grpcio==1.83.0
+grpcio-tools==1.83.0
 gymnasium==1.3.0
 h11==0.16.0
 hf-xet==1.5.2
@@ -32,6 +39,7 @@ httpcore==1.0.9
 httpx==0.28.1
 huggingface_hub==1.25.1
 idna==3.18
+iniconfig==2.3.0
 Jinja2==3.1.6
 jsonlines==4.0.0
 lerobot==0.6.0
@@ -66,12 +74,17 @@ orderly-set==5.5.0
 packaging==25.0
 pandas==2.3.3
 pillow==12.2.0
+pip==26.1.2
+pluggy==1.6.0
 propcache==0.5.2
+protobuf==7.35.1
 psutil==7.2.2
 pyarrow==25.0.0
 Pygments==2.20.0
 pynput==1.8.2
+pyrealsense2==2.58.3.10794
 pyserial==3.5
+pytest==8.4.2
 python-dateutil==2.9.0.post0
 python-xlib==0.33
 pytz==2026.3.post1
@@ -96,8 +109,8 @@ tqdm==4.70.0
 transformers==5.5.4
 triton==3.6.0
 typer==0.27.0
-typing-inspect==0.9.0
 typing_extensions==4.15.0
+typing-inspect==0.9.0
 tzdata==2026.3
 urllib3==2.7.0
 wheel==0.47.0

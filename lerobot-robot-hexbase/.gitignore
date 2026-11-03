@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Ordinary machine overrides stay local. These four configurations are
+# archived verbatim as inputs to the existing fullcycle-v4 workflow.
+configs/*.local.yaml
+!configs/record_firefly_y6_fullcycle_v4.local.yaml
+!configs/launch_firefly_y6_follower_only.local.yaml
+!configs/deploy_firefly_y6_hold_fullcycle_v4_100k.local.yaml
+!configs/deploy_firefly_y6_hold_fullcycle_v4_arm6_20k.local.yaml
+
+# The current deployment loads these contracts/audits from their original
+# paths. Keep their bytes in Git while ignoring ordinary run outputs.
+/outputs/*
+!/outputs/firefly_diagnostics/
+/outputs/firefly_diagnostics/*
+!/outputs/firefly_diagnostics/controller_contract_validated_v2_arm0435_ee0165.json
+!/outputs/firefly_diagnostics/firefly_y6_tip_servo_open_only_fullcycle_v4_schema5_exact.json
+!/outputs/firefly_diagnostics/firefly_y6_tip_servo_open_only_fullcycle_v4_schema6_exact.json
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.orig
+*.rej
+*~
+.DS_Store

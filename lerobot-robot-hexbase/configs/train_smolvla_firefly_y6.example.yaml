@@ -1,0 +1,22 @@
+# SmolVLA fine-tuning template for the audited Firefly Y6 validated_v2 dataset.
+# Use only through scripts/train_firefly_smolvla_attested.py. The wrapper owns
+# the output/dataset/checkpoint/Hub/WandB/rename_map contract and validates a
+# pinned local SmolVLA base before forcing policy.path, schema inference, the
+# local SmolVLM path, and load_vlm_weights=false. Do not add policy fields here
+# or point any part of this workflow at legacy data or checkpoints.
+
+dataset:
+  repo_id: local/firefly_y6_manual_validated_v2
+  root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_manual_validated_v2
+  return_uint8: true
+
+batch_size: 1
+num_workers: 4
+prefetch_factor: 2
+persistent_workers: true
+steps: 30000
+log_freq: 20
+save_checkpoint: true
+save_freq: 5000
+wandb:
+  enable: false

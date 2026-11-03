@@ -1,0 +1,52 @@
+# Commissioning template only.  This checked-in file intentionally contains
+# no candidate home or envelopes and therefore cannot produce a plan or unlock
+# execution.  Copy it to a `.local.yaml` file only after collecting and
+# reviewing repeatable start/end samples with an independent E-stop available.
+# The demonstration itself must still include the operator return-home motion.
+# Post-save recovery is outside the episode and cannot supply missing labels.
+schema_version: 1
+profile_id: UNCOMMISSIONED_FIREFLY_Y6_RECORDING_RECOVERY
+
+commissioning:
+  home_validated: false
+  recovery_envelope_validated: false
+  j4_clearance_validated: false
+  j2_stage_validated: false
+  j3_stage_validated: false
+  remaining_ee_stage_validated: false
+  independent_estop_procedure_validated: false
+  teleop_handoff_validated: false
+
+planning:
+  # Axis order for every seven-value vector:
+  # J1, J2, J3, J4, J5, J6, jaw_joint1 (radians).
+  home: null
+  home_tolerance: null
+  # These must be live controller limits inset by a commissioned safety margin,
+  # not copied blindly from an old deployment center.
+  position_min: null
+  position_max: null
+  # Entry is the narrow recording start/end gate. Recovery is the wider but
+  # still explicitly validated automatic-recovery envelope.
+  entry_min: null
+  entry_max: null
+  recovery_min: null
+  recovery_max: null
+  step_cap: null
+  # J4 clearance must equal home[3]; the planner raises J4 first and never
+  # lowers it in a later stage.
+  j4_clearance: null
+  max_frames: null
+  max_total_travel_rad: null
+  # Keep false until positive J3 motion has been commissioned separately.
+  allow_positive_j3_motion: false
+
+control:
+  # Each value must be strictly below the matching follower tracking limit.
+  candidate_lead_budget: null
+  command_hz: 30.0
+  stall_frames: null
+  max_movement_control_frames: null
+  settle_frames: null
+  required_home_frames: null
+  minimum_progress_rad: null

@@ -174,12 +174,17 @@ rsync -a --info=progress2 \
 --dataset.root=/data/firefly_y6_manual_20260811_172346
 ```
 
-可使用当前工作区的以下文件重建环境：
+环境恢复的完整顺序、CUDA wheel 安装源和检查命令见
+[安装与环境恢复](INSTALL.md)。Linux x86_64 优先使用以下文件：
 
 ```text
-configs/lerobot-train.conda.yml
+configs/locks/lerobot-train-linux-64.explicit.txt
 configs/lerobot-train.requirements.txt
+configs/environment-snapshot-20261102.json
 ```
+
+`lerobot-train.conda.yml` 仅为最小定义，不能单独恢复完整环境。已有 attested
+wrapper 还可能绑定解释器和资产的绝对路径及哈希，迁移前需按安装文档核对。
 
 不要直接复制整个 `miniforge3` 环境目录到另一台机器。SmolVLA 若不想重新下载模型，
 还可额外复制 `/home/kk/kk_data/lerobot/hf_cache`；ACT 的 ResNet 权重也可在新机首次

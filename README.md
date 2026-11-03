@@ -7,6 +7,9 @@
 
 安装日期：2026-07-29
 
+环境清单快照：2026-11-02，见
+[环境与系统版本记录](configs/environment-snapshot-20261102.json)。
+
 ## 已固定版本
 
 - LeRobot 0.6.0
@@ -20,6 +23,10 @@ TorchCodec 0.10 与 PyTorch 2.10 配套。不要单独升级 TorchCodec；0.11
 需要 PyTorch 2.11。
 
 ## 操作文档
+
+首次安装或换电脑先看 [安装与环境恢复](docs/INSTALL.md)。
+各配置文件的用途、生效方式和修改要求见 [配置目录说明](configs/README.md)，
+克隆、子模块更新和提交顺序见 [Git 使用与归档范围](docs/GIT_WORKFLOW.md)。
 
 按顺序使用以下文档：
 
@@ -58,6 +65,10 @@ git -C lerobot-robot-hexbase status
 需要单独备份。基础 bundle 的文本配置、tokenizer、来源 lock 和两份 640 字节
 归一化参数保留在 Git；`datasets/calibration/` 中的标定文件也允许纳入版本管理。
 本次整理没有补全数据/模型备份，也不表示已完成新机复现验收。
+
+环境恢复所需的 Conda explicit 锁、pip 清单及 RealSense 权限规则见
+[安装文档](docs/INSTALL.md)。归档提交与后续工作区补充的区别、忽略规则例外和
+发布检查方法见 [Git 使用文档](docs/GIT_WORKFLOW.md)。
 
 整理前的根仓库元数据和小文件快照保存在
 `.local-archive/git-layout-20261102-120215/`，其中 `README.txt` 说明备份范围，

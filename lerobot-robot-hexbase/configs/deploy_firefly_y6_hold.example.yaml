@@ -1,0 +1,71 @@
+# Formal attested SmolVLA only; legacy datasets/checkpoints are forbidden.
+# Persistent, fingerprint-bound HOLD profile for an arm controller that does
+# not advertise RAMP_STOP. Copy to a new local file, fill every placeholder,
+# use a new output_dir, and start at shadow. HOLD can keep the final target
+# powered after a command/process/host failure; every execute invocation also
+# requires both explicit CLI risk flags documented in README.md.
+robot:
+  type: hex_zenoh_follower
+  id: firefly_y6_follower
+  connect: tcp/127.0.0.1:7447
+  arm_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/arm1
+  ee_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/ee1
+  arm_joint_names: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+  ee_joint_names: [jaw_joint1]
+  mode: shadow
+  client_name: lerobot_firefly_y6_hold
+  connect_timeout_s: 5.0
+  rpc_timeout_s: 1.0
+  max_state_age_s: 0.1
+  max_status_age_s: 0.3
+  max_send_gap_s: 0.25
+  command_hz: 30.0
+  arm_step_limit_rad: 0.005
+  ee_step_limit_rad: 0.002
+  arm_tracking_error_rad: 0.05
+  ee_tracking_error_rad: 0.02
+  tracking_error_frames: 3
+  arm_kp: 40.0
+  arm_kd: 2.0
+  ee_kp: 75.0
+  ee_kd_default_scale: 0.5
+  arm_timeout_behavior: hold
+  allow_arm_hold_timeout_without_ramp_stop: true
+  zenoh_settle_time_s: 0.2
+  cameras:
+    scene:
+      type: intelrealsense
+      serial_number_or_name: CHANGE_ME_D435_SERIAL
+      fps: 30
+      width: 640
+      height: 480
+      use_rgb: true
+      use_depth: false
+      warmup_s: 1
+    wrist:
+      type: intelrealsense
+      serial_number_or_name: CHANGE_ME_D405_SERIAL
+      fps: 30
+      width: 640
+      height: 480
+      rotation: 180
+      use_rgb: true
+      use_depth: false
+      warmup_s: 1
+
+checkpoint: CHANGE_ME_VALIDATED_V2_CHECKPOINT
+smolvla_vlm_snapshot: CHANGE_ME_MATERIALIZED_SMOLVLM_BUNDLE
+dataset_repo_id: local/firefly_y6_manual_validated_v2
+dataset_root: CHANGE_ME_VALIDATED_V2_DATASET_ROOT
+dataset_controller_contract: CHANGE_ME_VALIDATED_V2_CONTROLLER_CONTRACT
+task: Pick up the red block and place it in the blue box.
+fps: 30
+n_action_steps: 10
+enable_action_slew_rate_adapter: true
+visual_phase_latch:
+  enabled: false
+replay_episode: 0
+replay_speed: 0.5
+act_duration_s: 3.0
+output_dir: outputs/firefly_deployment_hold_validated_v2
+record_video: true

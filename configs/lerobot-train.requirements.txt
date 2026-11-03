@@ -1,3 +1,7 @@
+# Installed-version snapshot: 2026-11-02, Python 3.12.13, Linux x86_64.
+# Install torch/torchvision from the official cu128 index first; see docs/INSTALL.md.
+# The editable HexBase plugin is installed separately in lerobot-io only.
+# This is a version inventory, not a pip artifact hash lock.
 accelerate==1.14.0
 aiohappyeyeballs==2.7.1
 aiohttp==3.14.3
@@ -65,6 +69,7 @@ opencv-python-headless==4.13.0.92
 packaging==25.0
 pandas==2.3.3
 pillow==12.2.0
+pip==26.1.2
 platformdirs==4.11.0
 propcache==0.5.2
 protobuf==7.35.1
@@ -97,9 +102,9 @@ tqdm==4.70.0
 transformers==5.5.4
 triton==3.6.0
 typer==0.27.0
+typing_extensions==4.15.0
 typing-inspect==0.9.0
 typing-inspection==0.4.2
-typing_extensions==4.15.0
 tzdata==2026.3
 urllib3==2.7.0
 wandb==0.27.2

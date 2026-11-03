@@ -1,0 +1,53 @@
+{
+  "arm_prefix": "hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/arm1",
+  "captured_at_unix_ns": 1786614211884990099,
+  "ee_prefix": "hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/ee1",
+  "effective_step_limits": [
+    0.0435,
+    0.0435,
+    0.0435,
+    0.0435,
+    0.0435,
+    0.0435,
+    0.0165
+  ],
+  "joint_names": [
+    "joint_1.pos",
+    "joint_2.pos",
+    "joint_3.pos",
+    "joint_4.pos",
+    "joint_5.pos",
+    "joint_6.pos",
+    "jaw_joint1.pos"
+  ],
+  "pos_max": [
+    2.859999895095825,
+    2.0899999141693115,
+    3.140000104904175,
+    1.5700000524520874,
+    1.5399999618530273,
+    2.7899999618530273,
+    0.6000000238418579
+  ],
+  "pos_min": [
+    -2.859999895095825,
+    -1.5700000524520874,
+    0.0,
+    -1.5700000524520874,
+    -1.5399999618530273,
+    -2.7899999618530273,
+    0.0
+  ],
+  "position_margins": [
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.005
+  ],
+  "record_hz": 30.0,
+  "schema": "firefly_recording_contract_v1",
+  "source": "live ArmDescription/EeDescription via HexZenohCommandTap"
+}

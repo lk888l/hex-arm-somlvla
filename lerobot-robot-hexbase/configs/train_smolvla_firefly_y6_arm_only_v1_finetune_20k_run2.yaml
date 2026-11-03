@@ -1,0 +1,31 @@
+# Fixed offline continuation job for the six-axis Firefly arm-only v1 dataset.
+# Launch only through scripts/train_firefly_smolvla_arm_only_v1_finetune_20k_run2.py.
+# The launcher supplies the pinned local 100k parent and deliberately leaves
+# policy input/output features null so LeRobot derives the exact 6-D schema
+# and normalization statistics from this dataset's metadata.
+dataset:
+  repo_id: local/firefly_y6_fullcycle_v4_arm_only_v1
+  root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4_arm_only_v1
+  return_uint8: true
+  image_transforms:
+    enable: false
+
+output_dir: /home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_arm_only_v1_finetune_20k_attested_run2
+job_name: firefly_y6_smolvla_fullcycle_v4_arm_only_v1_finetune_20k_attested_run2
+seed: 1000
+batch_size: 1
+num_workers: 4
+prefetch_factor: 2
+persistent_workers: true
+steps: 20000
+env_eval_freq: 0
+eval_steps: 0
+max_eval_samples: 0
+log_freq: 20
+save_checkpoint: true
+save_freq: 10000
+use_policy_training_preset: true
+wandb:
+  enable: false
+job:
+  target: local

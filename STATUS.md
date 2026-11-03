@@ -71,9 +71,12 @@
 
 ## 文档入口
 
-1. [启动文档](docs/STARTUP.md)
-2. [录制文档](docs/RECORDING.md)
-3. [训练文档](docs/TRAINING.md)
+1. [安装与环境恢复](docs/INSTALL.md)
+2. [配置目录说明](configs/README.md)
+3. [Git 使用与归档范围](docs/GIT_WORKFLOW.md)
+4. [启动文档](docs/STARTUP.md)
+5. [录制文档](docs/RECORDING.md)
+6. [训练文档](docs/TRAINING.md)
 
 ## 常用软件验证
 

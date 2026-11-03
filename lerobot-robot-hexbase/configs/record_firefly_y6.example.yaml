@@ -1,0 +1,76 @@
+# Generic formal validated_v2 template for another computer. On this machine,
+# launch scripts/record_firefly_y6_validated_v2.py; it validates and invokes
+# configs/record_firefly_y6_validated_v2.local.yaml, paired
+# with outputs/firefly_diagnostics/controller_contract_validated_v2_arm0435_ee0165.json.
+# Copy this file only when a new local config is needed, then replace both
+# RealSense serial placeholders.
+robot:
+  type: hex_zenoh_observer
+  id: firefly_y6_follower
+  connect: tcp/127.0.0.1:7447
+  arm_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/arm1
+  ee_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/ee1
+  arm_joint_names: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+  ee_joint_names: [jaw_joint1]
+  connect_timeout_s: 5.0
+  max_state_age_s: 0.100
+  zenoh_settle_time_s: 0.2
+  cameras:
+    scene:
+      type: intelrealsense
+      serial_number_or_name: CHANGE_ME_D435_SERIAL
+      fps: 30
+      width: 640
+      height: 480
+      use_rgb: true
+      use_depth: false
+      warmup_s: 1
+    wrist:
+      type: intelrealsense
+      serial_number_or_name: CHANGE_ME_D405_SERIAL
+      fps: 30
+      width: 640
+      height: 480
+      rotation: 180
+      use_rgb: true
+      use_depth: false
+      warmup_s: 1
+
+teleop:
+  type: hex_zenoh_command_tap
+  id: firefly_y6_command_tap
+  connect: tcp/127.0.0.1:7447
+  arm_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/arm1
+  ee_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/ee1
+  arm_joint_names: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+  ee_joint_names: [jaw_joint1]
+  connect_timeout_s: 5.0
+  rpc_timeout_s: 1.0
+  max_command_age_s: 0.100
+  max_state_age_s: 0.100
+  max_status_age_s: 0.300
+  max_pair_skew_s: 0.020
+  record_hz: 30.0
+  max_step_reference_age_s: 1.0
+  arm_step_limit_rad: 0.0435
+  ee_step_limit_rad: 0.0165
+  arm_position_margin_rad: 0.020
+  ee_position_margin_rad: 0.005
+  zenoh_settle_time_s: 0.2
+
+dataset:
+  repo_id: local/firefly_y6_manual_validated_v2
+  root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_manual_validated_v2
+  single_task: Pick up the red block and place it in the blue box.
+  fps: 30
+  episode_time_s: 600
+  reset_time_s: 15
+  num_episodes: 20
+  video: true
+  push_to_hub: false
+  streaming_encoding: false
+  num_image_writer_processes: 0
+  num_image_writer_threads_per_camera: 4
+
+display_data: false
+play_sounds: false

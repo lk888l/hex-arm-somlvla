@@ -1,0 +1,23 @@
+# SmolVLA fine-tuning contract for the audited Firefly Y6 v3 trimmed dataset.
+#
+# Use only through scripts/train_firefly_smolvla_attested.py (normally via
+# scripts/train_firefly_smolvla_v3_trimmed_30k.py). The attestation wrapper
+# forces dataset.episodes=null, so LeRobot samples every frame from all 20
+# episodes. SmolVLA's 50-frame action chunk is a per-sample prediction horizon;
+# it does not truncate a 40-50 second episode.
+
+dataset:
+  repo_id: local/firefly_y6_manual_validated_v3_trimmed
+  root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_manual_validated_v3_trimmed
+  return_uint8: true
+
+batch_size: 1
+num_workers: 4
+prefetch_factor: 2
+persistent_workers: true
+steps: 30000
+log_freq: 20
+save_checkpoint: true
+save_freq: 5000
+wandb:
+  enable: false

@@ -1,0 +1,114 @@
+# Machine-local schema-6 deployment for the attested arm-only SmolVLA policy.
+# During SEEKING, SmolVLA owns J1--J6 while the jaw is held at the accepted
+# startup capture value. After visual takeover, J1--J6 HOLD and only the tip
+# layer may monotonically open the jaw. This profile never authorizes IK,
+# explicit descent, jaw closing, grasp, lift, transport, release, or replay.
+robot:
+  type: hex_zenoh_follower
+  id: firefly_y6_follower
+  connect: tcp/127.0.0.1:7447
+  arm_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/arm1
+  ee_prefix: hexmeow/50e41fe1cf464c2581a44f1339e6eb4e/ee1
+  arm_joint_names: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+  ee_joint_names: [jaw_joint1]
+  mode: shadow
+  client_name: lerobot_firefly_y6_fullcycle_v4_arm6_20k
+  connect_timeout_s: 5.0
+  rpc_timeout_s: 1.0
+  max_state_age_s: 0.1
+  camera_max_age_s: 0.1
+  max_status_age_s: 0.3
+  max_send_gap_s: 0.25
+  command_hz: 30.0
+  motion_envelope: fullcycle_v4
+  arm_step_limit_rad: 0.0435
+  ee_step_limit_rad: 0.0165
+  arm_tracking_error_rad: 0.15
+  ee_tracking_error_rad: 0.05
+  ee_closing_tracking_error_rad: 0.06
+  tracking_error_frames: 3
+  arm_kp: 40.0
+  arm_kd: 2.0
+  ee_kp: 150.0
+  ee_kd_default_scale: 0.5
+  arm_timeout_behavior: hold
+  allow_arm_hold_timeout_without_ramp_stop: true
+  enable_arm_gravity_ff: true
+  expected_arm_urdf_sha256: f923d1f790ffc3bd7561cf9bdf43d749515a6e157961ea7cb013bd186f550291
+  enable_ee_payload_gravity_ff: true
+  expected_ee_urdf_sha256: f74b3e76b14175c788c5ef70dd0c1941958d229a8461da6f20e17543e4ba1114
+  expected_arm_urdf_root_link: base_link
+  expected_arm_urdf_tip_link: link_6
+  expected_ee_urdf_root_link: base_link
+  expected_ee_urdf_tip_link: tcp
+  expected_ee_payload_mass_kg: 0.41
+  expected_ee_payload_com_xyz_m: [0.005537804878, 0.000026829268, 0.048889970714]
+  arm_gravity_ff_max_abs_nm: 8.0
+  zenoh_settle_time_s: 0.2
+  cameras:
+    scene:
+      type: intelrealsense
+      serial_number_or_name: "030522071867"
+      fps: 30
+      width: 640
+      height: 480
+      use_rgb: true
+      use_depth: false
+      warmup_s: 1
+    wrist:
+      type: intelrealsense
+      serial_number_or_name: "323622270296"
+      fps: 30
+      width: 640
+      height: 480
+      rotation: 180
+      use_rgb: true
+      use_depth: false
+      warmup_s: 1
+
+checkpoint: /home/kk/kk_data/lerobot/outputs/train/firefly_y6_smolvla_fullcycle_v4_arm_only_v1_finetune_20k_attested_run2/checkpoints/020000/pretrained_model
+policy_runtime_role: arm6_seeking
+smolvla_vlm_snapshot: /home/kk/kk_data/lerobot/assets/firefly/smolvlm2-500m-video-instruct-7b375e1b73b11138ff12fe22c8f2822d8fe03467
+dataset_repo_id: local/firefly_y6_fullcycle_v4_arm_only_v1
+dataset_root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4_arm_only_v1
+dataset_controller_contract: /home/kk/kk_data/lerobot/lerobot-robot-hexbase/outputs/firefly_diagnostics/controller_contract_validated_v2_arm0435_ee0165.json
+visual_audit_source_repo_id: local/firefly_y6_fullcycle_v4
+visual_audit_source_root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4
+arm6_run_commit_sha: "b514f9815f40e1dc1c831b154e8f346b479194afe386fd94210ba06b596757b1"
+task: Find the red block, pick it up, place it in the blue box, release it, and return the arm to its initial pose.
+fps: 30
+n_action_steps: 10
+inference_seed: 1000
+act_chunk_inference_mode: synchronous_hold
+enable_action_slew_rate_adapter: true
+grasp_phase_correction:
+  enabled: false
+  act_start_center_rad: [-0.047621, -1.372725, 2.938167, 0.375869, -0.050262, -0.059902, 0.314108]
+  act_start_tolerance_rad: [0.163024, 0.180633, 0.121334, 0.106397, 0.116914, 0.121981, 0.032197]
+visual_phase_latch:
+  enabled: true
+  tip_servo:
+    mode: execute
+    probe_profile: open_only
+    coarse_x_norm: [0.50, 0.545]
+    coarse_y_norm: [0.42, 0.56]
+    coarse_area_fraction: [0.017, 0.029]
+    coarse_capture_jaw_rad: [0.285, 0.325]
+    tracking_x_norm: [0.40, 0.56]
+    tracking_y_norm: [0.40, 0.62]
+    tracking_area_fraction: [0.014, 0.041]
+    max_arm_speed_rad_s: 0.07
+    max_takeover_reference_error_rad: 0.035
+    arm_target_settle_rad: [0.002, 0.002, 0.002, 0.002, 0.002, 0.002]
+    opening_timeout_ms: 1500.0
+    seeking_timeout_ms: 20000.0
+    descent_step_m: 0.0
+    max_total_descent_m: 0.0
+    allow_close: false
+visual_latch_audit_path: /home/kk/kk_data/lerobot/lerobot-robot-hexbase/outputs/firefly_diagnostics/firefly_y6_tip_servo_open_only_fullcycle_v4_schema6_exact.json
+visual_latch_audit_sha256: "58ee044e5ad8302ffde8ab2303b25aa33f8ccf1a762dae81572928d49b0985bc"
+replay_episode: 0
+replay_speed: 0.5
+act_duration_s: 30.0
+output_dir: outputs/firefly_deployment_hold_fullcycle_v4_arm6_20k_tip_probe_v1
+record_video: true

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# 包名以 lerobot_robot_ 开头 => lerobot 的 register_third_party_plugins() 启动时自动 import 注册。
+name = "lerobot_robot_hexbase"
+version = "0.3.0"
+description = "LeRobot plugins for Hex base, read-only capture, and safety-gated Firefly execution over Zenoh."
+requires-python = ">=3.12"
+dependencies = [
+  "eclipse-zenoh>=1.9,<2",
+  "lerobot>=0.6,<0.7",
+  "protobuf>=6.31.1,<8",
+]
+
+[project.optional-dependencies]
+realsense = ["pyrealsense2>=2.58.3.10794,<2.59; platform_system == 'Linux'"]
+dev = ["grpcio-tools>=1.73,<2", "pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+include = ["lerobot_robot_hexbase*"]

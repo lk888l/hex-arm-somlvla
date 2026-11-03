@@ -1,0 +1,25 @@
+# SmolVLA baseline for 50 successful full-cycle Firefly Y6 demonstrations.
+# Launch only through scripts/train_firefly_smolvla_fullcycle_v4_100k.py.
+# The attestation wrapper supplies the local base model and derives the exact
+# 7-D state/action and scene/wrist feature schema from this dataset.
+dataset:
+  repo_id: local/firefly_y6_fullcycle_v4
+  root: /home/kk/kk_data/lerobot/datasets/local/firefly_y6_fullcycle_v4
+  return_uint8: true
+  image_transforms:
+    enable: false
+
+batch_size: 1
+num_workers: 4
+prefetch_factor: 2
+persistent_workers: true
+steps: 100000
+env_eval_freq: 0
+eval_steps: 0
+max_eval_samples: 0
+log_freq: 20
+save_checkpoint: true
+save_freq: 10000
+use_policy_training_preset: true
+wandb:
+  enable: false

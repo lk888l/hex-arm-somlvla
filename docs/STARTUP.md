@@ -45,12 +45,14 @@ lsusb -t
 `lsusb` 显示的 USB 描述符序列号不一定等于 librealsense 序列号。配置相机时以
 `rs-enumerate-devices` 或 `lerobot-find-cameras realsense` 的结果为准。
 
-如果是首次安装或重建采集环境：
+首次安装或重建采集环境，先按 [安装与环境恢复](INSTALL.md) 安装固定依赖和
+RealSense USB 权限规则。依赖已完整恢复后，如需重新注册当前插件源码：
 
 ```bash
 source /home/kk/kk_data/lerobot/activate-io.sh
 cd /home/kk/kk_data/lerobot/lerobot-robot-hexbase
-python -m pip install -e '.[realsense,dev]'
+python -m pip install --no-deps -e '.[realsense,dev]'
+python -m pip check
 ```
 
 ## 2. 按顺序启动四个终端

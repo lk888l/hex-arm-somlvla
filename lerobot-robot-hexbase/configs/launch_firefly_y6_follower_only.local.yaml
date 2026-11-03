@@ -1,0 +1,30 @@
+# Formal non-teleop launcher: initialize only follower arm1 + hosted ee1 on can1.
+# Deliberately omit arm0/ee0 so launcher never opens, initializes, or holds can0.
+# Keep the arm1/ee1 hardware parameters identical to launch_real_dual_arm_teleop.yaml.
+router:
+  listen: ["tcp/0.0.0.0:7447"]
+  manage: true
+  connect: "tcp/127.0.0.1:7447"
+
+can:
+  data_bitrate: 4000000
+
+robots:
+  - id: arm1
+    kind: arm
+    model: firefly_y6
+    can: can1
+    ee: ee1
+    env:
+      JOINT_SIGN: "-1,-1,1,1,1,1"
+      TORQUE_FACTOR: "0.85,0.85,0.85,1,1,1"
+      IDLE_MODE: "gravity_comp"
+      EE_TORQUE_PERMILLE: "400"
+      EE_KPKD_TORQUE_PERMILLE: "400"
+      URDF_PATH: "/home/kk/kk_data/git_clone/hex-descriptions/products/firefly_y6/urdf/xpkg_urdf_firefly_y6.urdf"
+      EE_URDF_PATH: "/home/kk/kk_data/git_clone/hex-descriptions/products/gr80/urdf/gr80.urdf"
+
+  - id: ee1
+    kind: hand
+    model: gr80
+    can: can1

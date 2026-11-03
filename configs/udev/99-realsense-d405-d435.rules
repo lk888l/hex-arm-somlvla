@@ -1,0 +1,9 @@
+# Restricted USB permissions for RealSense D435 and D405.
+# Access is limited to members of the plugdev group.
+
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="8086", ATTR{idProduct}=="0b07", MODE:="0660", GROUP:="plugdev"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="8086", ATTR{idProduct}=="0b5b", MODE:="0660", GROUP:="plugdev"
+
+# D400-family firmware recovery modes (USB 3 and USB 2).
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="8086", ATTR{idProduct}=="0adb", MODE:="0660", GROUP:="plugdev"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="8086", ATTR{idProduct}=="0adc", MODE:="0660", GROUP:="plugdev"
